@@ -11,3 +11,9 @@ Product Lab 2
 * Sorteerfilter toevoegen
 * Tekst na icons en avatar in product-card moeten in het midden uitgelijnd worden
 * Footer toevoegen
+
+#### [Suppliers.html](https://lorientheunissen.github.io/bulk/suppliers.html)
+* Navigatie vastzetten vanboven
+* Sorteerfilter toevoegen
+* Front-end voor leveranciers maken
+* Footer toevoegen
