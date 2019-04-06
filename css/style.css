@@ -11,6 +11,8 @@ a {
     width: 25px;
 }
 
+/* NAVIGATIEBALK */
+
 nav {
     background-color: #306953;
     display: grid;
@@ -78,9 +80,13 @@ nav div.nav li {
     line-height: 3em;
 }
 
+/* CONTAINER */
+
 div.container {
     margin: 3%;
 }
+
+/* CONTAINER >> HEADER >> ZOEKBALK */
 
 div.search {
     text-align: center;
@@ -103,7 +109,9 @@ div.search input[type=submit], div.button input[type=submit] {
     height: 50px;
     color: white;
 }
-/* SORTEREN OP
+
+/* CONTAINER >> HEADER >> SORTEERFILTER
+
 div.sort {
   height: 50px;
   text-align: right;
@@ -117,13 +125,20 @@ div.sort select{
 }
 */
 
+/* CONTAINER >> MAIN */
+
+
 div.main {
     margin-bottom: 3%;
 }
 
+/* CONTAINER >> MAIN >> TITLE */
+
 div.title {
     font-family: "Avenir Heavy";
 }
+
+/* CONTAINER >> MAIN >> FILTER */
 
 div.filter {
     margin-bottom: 3%;
@@ -140,6 +155,8 @@ div.filter select {
     border-radius: 6px;
     font-size: 0.9em;
 }
+
+/* CONTAINER >> PRODUCTS */
 
 div.products {
     display: grid;

@@ -1,0 +1,79 @@
+/* CSS VOOR LOGIN PAGINA */
+
+html, body {
+    height: 100%;
+    font-family: 'Avenir Book';
+    color: #306953;
+}
+
+a {
+    color: #306953;
+    text-decoration: underline;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+.login {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100%;
+}
+
+.register {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    height: 100%;
+}
+
+main {
+    background-color: transparent;
+    text-align: center;
+    color: #306953;
+}
+
+.login main {
+    margin: 15%;
+}
+
+.register main {
+    margin: 5% 15%;
+}
+
+main h1, h3 {
+    font-family: 'Avenir Heavy';
+}
+
+div.form-login, div.form-register{
+    text-align: center;
+}
+
+div.form-login input, div.form-register input, div.form-register select{
+    padding: 5px 12px;
+    height: 40px;
+    border: 1px solid #306953;
+    border-radius: 6px;
+    font-size: 0.9em;
+    display: block;
+    width: 96%;
+    margin : 3% auto;
+}
+
+div.form-register select {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+
+div.form-login input[type=submit], div.form-register input[type=submit] {
+    background-color: #306953;
+    height: 50px;
+    color: white;
+    width: 100%;
+}
+
+aside {
+    background-color: #306953;
+    color: white;
+}
