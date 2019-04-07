@@ -81,6 +81,10 @@ input[type=submit] {
     text-decoration-line: none;
 }
 
+input[type=submit]:hover {
+    font-weight: 500;
+}
+
 input.button-outline {
     background-color: transparent;
     border: 1px solid white;
