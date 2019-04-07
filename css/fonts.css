@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Avenir Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Avenir Book';
     font-style: normal;
     font-weight: normal;
@@ -16,6 +23,6 @@
     font-family: 'Avenir Medium';
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts//AvenirLTStd-Medium.woff') format('woff');
+    src: url('../fonts/AvenirLTStd-Medium.woff') format('woff');
 }
 

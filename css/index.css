@@ -1,10 +1,11 @@
 body {
     font-family: 'Avenir Book';
-    background-color: #306953;
+    background-color: white;
 }
 
 nav div {
     align-self: center;
+    background-color: #306953;
 }
 
 nav div.index-nav li {
@@ -37,6 +38,59 @@ input.button-outline {
 input.button-outline:hover {
     background-color: white;
     color: #306953;
+}
+
+.home {
+    height: 650px;
+    background-color: #306953;
+    margin-left: 45%;
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+
+.home h1 {
+    font-family: 'Avenir Black';
+    color: white;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.home p {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.how {
+    background-color: white;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.how .left, .right {
+    height: 750px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.how .left {
+    background-image: url('../images/BULK_background_grocery bag.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.how h2 {
+    font-family: 'Avenir Heavy';
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.how p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0% 3%;
 }
 
 @media (min-width: 650px){
