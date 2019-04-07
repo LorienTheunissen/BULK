@@ -55,7 +55,7 @@ Pagina | Functie
 * Footer toevoegen
 
 #### [Middlemen.html](https://lorientheunissen.github.io/bulk/middlemen.html)
-* ~~Startbestand aanmaken~~
+* Startbestand aanmaken
 
 #### [Product.html](https://lorientheunissen.github.io/bulk/product.html)
 * Startbestand aanmaken
