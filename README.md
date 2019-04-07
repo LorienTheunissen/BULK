@@ -26,12 +26,12 @@ Pagina | Functie
 #### [Register.html](https://lorientheunissen.github.io/bulk/register.html)
 * ~~Startbestand aanmaken~~
 * Integratie Facebook en Google Plus account
-* Content voor aside-element
+* ~~Content voor aside-element~~
 
 #### [Login.html](https://lorientheunissen.github.io/bulk/login.html)
 * ~~Startbestand aanmaken~~
 * Integratie Facebook en Google Plus account
-* Content voor aside-element
+* ~~Content voor aside-element~~
 * Wachtwoord vergeten?
 
 #### [Index.html](https://lorientheunissen.github.io/bulk/index.html)
