@@ -55,7 +55,7 @@ div.form-login, div.form-register {
     text-align: center;
 }
 
-div.form-login input, div.form-register input, div.form-register select {
+div.form-login input, div.form-register input, div.form-register select, input.button-outline, input.button-line {
     padding: 5px 12px;
     height: 50px;
     border: 1px solid #306953;
@@ -73,14 +73,46 @@ div.form-register select {
     background-color: transparent;
 }
 
-div.form-login input[type=submit], div.form-register input[type=submit] {
+input[type=submit] {
     background-color: #306953;
     height: 50px;
     color: white;
     width: 100%;
+    text-decoration-line: none;
+}
+
+input.button-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 70%;
+    margin-top: 10%;
+}
+
+input.button-line {
+    background-color: white;
+    color: #306953;
+    width: 70%;
+    margin-top: 5%;
 }
 
 aside {
     background-color: #306953;
     color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+aside div {
+    padding: 10%;
+}
+
+aside div.logo img {
+    width: 200px;
+    padding: 5%;
+}
+
+aside div.logo a.button-outline {
+    border: 1px solid white;
 }
