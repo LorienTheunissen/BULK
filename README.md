@@ -35,7 +35,12 @@ Pagina | Functie
 * Wachtwoord vergeten?
 
 #### [Index.html](https://lorientheunissen.github.io/bulk/index.html)
-* Startbestand aanmaken
+* ~~Startbestand aanmaken~~
+* ~~Navigatie toevoegen~~
+* Content voor "Home"
+* Content voor "Hoe werkt het?"
+* Content voor "Waarom BULK?"
+* Footer toevoegen
 
 #### [Search.html](https://lorientheunissen.github.io/bulk/search.html)
 * Startbestand aanmaken
