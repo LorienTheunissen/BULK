@@ -1,0 +1,120 @@
+/* NAVIGATIEBALK */
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    width: 25px;
+}
+
+nav {
+    background-color: #306953;
+    display: grid;
+    align-items: end;
+    align-content: end;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav div ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: grid;
+    justify-items: center;
+}
+
+nav div.logo {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 1;
+    justify-self: center;
+}
+
+nav div.subnav li {
+    line-height: 2em;
+}
+
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: #306953;
+}
+
+nav .dropdown li {
+    text-align: left;
+}
+
+nav div.nav li {
+    text-transform: uppercase;
+    font-family: "Avenir Medium";
+    letter-spacing: 1px;
+    line-height: 3em;
+}
+
+@media (min-width: 650px){
+    nav {
+        padding: 0% 10%;
+    }
+
+    nav div.logo {
+        grid-column: 1 / span 1;
+        grid-row: 1 / 1;
+        margin: 0;
+        justify-self: start;
+    }
+
+    nav div.logo img {
+        padding: 20px 10px 0px 10px;
+        height: 50px;
+    }
+
+    nav div li {
+        padding: 0px 10px;
+    }
+
+    nav div.subnav {
+        grid-column: 1 / span 4;
+        grid-row: 1 / 1;
+    }
+
+    nav div.subnav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    nav div.nav {
+        grid-column: 1 / span 1;
+        grid-row: 2 / 2;
+    }
+
+    nav div.nav ul {
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+    }
+}
