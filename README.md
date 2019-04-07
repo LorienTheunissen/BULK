@@ -37,7 +37,7 @@ Pagina | Functie
 #### [Index.html](https://lorientheunissen.github.io/bulk/index.html)
 * ~~Startbestand aanmaken~~
 * ~~Navigatie toevoegen~~
-* Content voor "Home"
+* ~~Content voor "Home"~~
 * Content voor "Hoe werkt het?"
 * Content voor "Waarom BULK?"
 * Footer toevoegen
