@@ -1,0 +1,57 @@
+body {
+    font-family: 'Avenir Book';
+    background-color: #306953;
+}
+
+nav div {
+    align-self: center;
+}
+
+nav div.index-nav li {
+    text-transform: uppercase;
+    font-family: "Avenir Medium";
+    letter-spacing: 1px;
+    line-height: 3em;
+}
+
+input.button-outline {
+    padding: 5px 12px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    display: block;
+    width: 100%;
+    margin: 3% auto;
+    box-sizing: border-box;
+
+    color: white;
+    text-decoration-line: none;
+
+    background-color: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+input.button-outline:hover {
+    background-color: white;
+    color: #306953;
+}
+
+@media (min-width: 650px){
+    nav div.index-nav {
+        grid-column: 1 / span 4;
+        grid-row: 1 / 1;
+    }
+
+    nav div.index-nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    nav div.index-nav li {
+        margin: 0 1%;
+    }
+}
