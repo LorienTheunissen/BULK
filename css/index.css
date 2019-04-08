@@ -3,19 +3,60 @@ body {
     background-color: white;
 }
 
-nav div {
-    align-self: center;
+h1, h2 {
+    font-family: 'Avenir Heavy';
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro {
     background-color: #306953;
 }
 
-nav div.index-nav li {
+.intro nav {
+    align-self: center;
+    background-color: #306953;
+    padding: 5%;
+}
+
+.intro nav a, div.home {
+    color: white;
+}
+
+.intro nav a:hover {
+    text-decoration: underline;
+}
+
+.intro nav div.logo {
+    text-align: center;
+}
+
+.intro nav div ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: grid;
+    justify-items: center;
+}
+
+.intro nav div.logo img {
+    height: 100px;
+}
+
+.intro nav div.index-nav li {
     text-transform: uppercase;
     font-family: "Avenir Medium";
     letter-spacing: 1px;
     line-height: 3em;
 }
 
-input.button-outline {
+.intro input.button-outline {
     padding: 5px 12px;
     height: 40px;
     border-radius: 6px;
@@ -35,56 +76,13 @@ input.button-outline {
     letter-spacing: 1px;
 }
 
-input.button-outline:hover {
+.intro input.button-outline:hover {
     background-color: white;
     color: #306953;
 }
 
-.home {
-    height: 650px;
-    background-color: #306953;
-    margin-left: 45%;
-    padding-top: 10%;
-    padding-bottom: 0;
-}
-
-.home h1 {
-    font-family: 'Avenir Black';
-    color: white;
-    font-size: 4em;
-    margin-bottom: 0;
-}
-
-.home p {
-    color: white;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-
-.left, .right {
-    height: 750px;
-    width: 100%;
-    padding-top: 10%;
-}
-
-h2 {
-    font-family: 'Avenir Heavy';
-    font-size: 2.5em;
-    margin-bottom: 5%;
-    text-align: center;
-}
-
-.how {
-    background-color: white;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-}
-
-.how p {
-    font-size: 1.3em;
-    line-height: 1.5em;
+.intro .home, .right {
+    padding: 10%;
 }
 
 .how .left {
@@ -93,39 +91,94 @@ h2 {
     background-position: center;
 }
 
+.how .left {
+    height: 640px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.how .right {
+    text-align: center;
+}
+
 .why {
-    padding: 5% 10%;
-    height: 700px;
     background-color: #306953;
     color: white;
+    padding: 10%;
 }
 
-.why .articles {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-
-.why .article {
-    margin: 4%;
-}
-
-.why .article h3 {
-    font-family: "Avenir Medium";
-}
-
-@media (min-width: 650px) {
-    nav div.index-nav {
-        grid-column: 1 / span 4;
-        grid-row: 1 / 1;
+@media (min-width: 600px){
+    div.logo {
+        display: block;
     }
 
-    nav div.index-nav ul {
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
+    .intro nav ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media (min-width: 800px){
+    .intro nav ul {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 
-    nav div.index-nav li {
-        margin: 0 1%;
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+    }
+
+    .why .articles {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 4%;
+    }
+}
+
+@media (min-width: 1024px){
+    .intro {
+        padding-bottom: 10%;
+    }
+
+    .intro h1 {
+        font-size: 3.5em;
+    }
+
+    .intro p {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 1200px){
+    .how {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .intro nav {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        padding: 2% 10%;
+    }
+
+    .intro nav .logo {
+        display: grid;
+    }
+
+    .intro nav li {
+        font-size: 1.2em;
+    }
+
+    .intro .logo img {
+        width: 80%
+    }
+
+    .intro .home {
+        margin-left: 35%;
     }
 }
