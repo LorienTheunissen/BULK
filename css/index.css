@@ -61,6 +61,19 @@ input.button-outline:hover {
     line-height: 1.5em;
 }
 
+.left, .right {
+    height: 750px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+h2 {
+    font-family: 'Avenir Heavy';
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
 .how {
     background-color: white;
     z-index: 2;
@@ -69,28 +82,35 @@ input.button-outline:hover {
     text-align: center;
 }
 
-.how .left, .right {
-    height: 750px;
-    width: 100%;
-    padding-top: 10%;
+.how p {
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 .how .left {
-    background-image: url('../images/BULK_background_grocery bag.JPG');
+    background-image: url('../images/BULK_background_share.JPG');
     background-size: cover;
     background-position: center;
 }
 
-.how h2 {
-    font-family: 'Avenir Heavy';
-    font-size: 3em;
-    margin-bottom: 0;
+.why {
+    padding: 5% 10%;
+    height: 700px;
+    background-color: #306953;
+    color: white;
 }
 
-.how p {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0% 3%;
+.why .articles {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.why .article {
+    margin: 4%;
+}
+
+.why .article h3 {
+    font-family: "Avenir Medium";
 }
 
 @media (min-width: 650px){
