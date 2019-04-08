@@ -2,6 +2,13 @@
 Product Lab 2
 
 ### Instructies
+
+#### Code
+* Stylesheet font.css toevoegen aan elke HTML voor fonts
+* Stylesheet header.css toevoegen waar navigatiebar nodig is
+* Aparte stylesheet voor iedere pagina, bv: index.css voor index.html
+
+#### Git commit
 * Reformat broncode alvorens je commit
 * Commit berichten: "BULK / (actie)"
 
