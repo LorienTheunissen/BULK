@@ -113,7 +113,7 @@ h2 {
     font-family: "Avenir Medium";
 }
 
-@media (min-width: 650px){
+@media (min-width: 650px) {
     nav div.index-nav {
         grid-column: 1 / span 4;
         grid-row: 1 / 1;

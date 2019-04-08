@@ -76,7 +76,7 @@ nav div.nav li {
     line-height: 3em;
 }
 
-@media (min-width: 650px){
+@media (min-width: 650px) {
     nav {
         padding: 0% 10%;
     }
