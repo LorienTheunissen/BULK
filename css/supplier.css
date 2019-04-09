@@ -1,0 +1,38 @@
+body {
+    font-family: "Avenir Book";
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+input[type=submit]:hover{
+    background-color: #204637
+}
+
+div.container {
+    margin: 3%;
+}
+
+.main .breadcrumbs a {
+    color: #306953;
+}
+
+.main .breadcrumbs a:hover {
+    text-decoration-line: underline;
+}
+
+div.supplier {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+div.supplier .supplier-info {
+    background-color: tomato;
+}
+
+@media (min-width: 650px) {
+    div.container {
+        margin: 3% 10%;
+    }
+}
