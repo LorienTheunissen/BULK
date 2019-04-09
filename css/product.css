@@ -1,0 +1,63 @@
+body {
+    font-family: "Avenir Book";
+}
+
+div.container {
+    margin: 3%;
+}
+
+.main .breadcrumbs a {
+    color: #306953;
+}
+
+.main .breadcrumbs a:hover {
+    text-decoration-line: underline;
+}
+
+.product {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+}
+
+.product .product-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    border-radius: 6px;
+    text-align: end;
+}
+
+.product .product-description {
+    line-height: 1.5;
+}
+
+.product-data {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 5%;
+}
+
+.product-data li {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2.5;
+}
+
+.product-supplier {
+    display: grid;
+    grid-template-columns: 15% 30% 20%;
+}
+
+.product-supplier img {
+    height: 75px;
+}
+
+@media (min-width: 650px) {
+    div.container {
+        margin: 3% 10%;
+    }
+}
