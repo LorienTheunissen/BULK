@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Book";
+    background-color: #f9f9f9;
+    margin: 0px;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+aside {
+    background-color: #306953;
+    max-width: 280px;
+    width: 280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    margin: 10% 5% 0% 5%;
+}
+
+nav {
+    padding-top: 50px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 300;
+}
+
+nav a:hover {
+    background-color: #204637;
+    border-left: 5px solid white;
+    padding: 15px 30px 15px 25px;
+}
+
+.fas {
+    margin-right: .8rem;
+    display: inline-block;
+    width: 30px;
+    position: relative;;
+    top: 2px;
+}
+
+nav .fas {
+    color: white;
+}
+
+nav a.active {
+    background: #204637;
+    border-left: 5px solid white;
+    padding: 15px 30px 15px 25px;
+}
+
+header {
+    margin-left: 280px;
+    padding: 0.9% 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+header .search .fas {
+    color: #306953;
+}
+
+header .search input[type=text]{
+    background-color: white;
+    border: 1px solid #306953;
+    height: 50px;
+    text-decoration-line: none;
+    padding: 5px 12px;
+    font-size: 0.9em;
+    width: 30%;
+    border-radius: 6px;
+    margin-right: 1%;
+}
+
+header .search input[type=submit] {
+    background-color: #306953;
+    height: 50px;
+    color: white;
+    width: 10%;
+    padding: 5px 12px;
+    font-size: 0.9em;
+    text-decoration-line: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+header .search input[type=submit]:hover {
+    font-weight: 500;
+}
+
+header .user {
+    display: grid;
+    /*grid-template-columns: 50% 50%;*/
+    align-items: center;
+    padding-right: 10%;
+}
+
+header .user a {
+    padding: 2%;
+    text-decoration: none;
+    color: #306953;
+    justify-self: end;
+}
+
+header .user a:hover {
+    text-decoration: underline;
+}
+
+header .user .avatar img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+main {
+    margin-left: 330px;
+    margin-top: 55px;
+}
+
+main h1 {
+    font-family: 'Avenir Heavy';
+}
