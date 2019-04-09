@@ -92,7 +92,7 @@ div.filter select {
 div.products {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
@@ -204,5 +204,15 @@ div.button {
 
     div.search input[type=submit] {
         width: 15%;
+    }
+
+    div.products {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+}
+
+@media (min-width: 1024px){
+    div.products {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     }
 }
