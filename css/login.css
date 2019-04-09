@@ -53,6 +53,10 @@ div.form-login input, input.button-outline, input.button-line, div.form-register
     box-sizing: border-box;
 }
 
+p#error {
+    color: red;
+}
+
 
 input.button-outline {
     background-color: transparent;
