@@ -23,7 +23,7 @@ div.container {
 }
 
 .product .product-row1, .product-row2 {
-    margin: 5%;
+    margin: 3% 0;
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 4%;
@@ -104,7 +104,7 @@ div.container {
 }
 
 .product-order input, select {
-    width: 30%
+    width: 25%
 }
 
 p#error {
@@ -112,7 +112,7 @@ p#error {
 }
 
 div.others  {
-    margin: 5%;
+    margin: 3% 0;
 }
 
 div.others .products {
