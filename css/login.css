@@ -1,5 +1,3 @@
-/* CSS VOOR LOGIN PAGINA */
-
 html, body {
     height: 100%;
     font-family: 'Avenir Book';
@@ -15,30 +13,14 @@ textarea:focus, input:focus, select:focus {
     outline: none;
 }
 
-.login {
-    display: grid;
-    grid-template-columns: 65% 35%;
-    height: 100%;
-}
-
-.register {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    height: 100%;
-}
-
 main {
     background-color: transparent;
     text-align: center;
-    color: #306953;
+    padding: 10%;
 }
 
-.login main {
-    margin: 15%;
-}
-
-.register main {
-    margin: 3% 15%;
+main h1, h3 {
+    font-family: 'Avenir Heavy';
 }
 
 .social img {
@@ -47,15 +29,19 @@ main {
     margin: 0% 3%;
 }
 
-main h1, h3 {
-    font-family: 'Avenir Heavy';
+input[type=submit] {
+    background-color: #306953;
+    height: 50px;
+    color: white;
+    width: 100%;
+    text-decoration-line: none;
 }
 
-div.form-login, div.form-register {
+div.form-login {
     text-align: center;
 }
 
-div.form-login input, div.form-register input, div.form-register select, input.button-outline, input.button-line {
+div.form-login input, input.button-outline, input.button-line, div.form-register input {
     padding: 5px 12px;
     height: 50px;
     border: 1px solid #306953;
@@ -67,23 +53,6 @@ div.form-login input, div.form-register input, div.form-register select, input.b
     box-sizing: border-box;
 }
 
-div.form-register select {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
-}
-
-input[type=submit] {
-    background-color: #306953;
-    height: 50px;
-    color: white;
-    width: 100%;
-    text-decoration-line: none;
-}
-
-input[type=submit]:hover {
-    font-weight: 500;
-}
 
 input.button-outline {
     background-color: transparent;
@@ -96,7 +65,15 @@ input.button-line {
     background-color: white;
     color: #306953;
     width: 70%;
-    margin-top: 5%;
+    margin-top: 10%;
+}
+
+aside input.button-outline, input.button-line {
+    margin: 3% auto ;
+}
+
+input[type=submit]:hover {
+    font-weight: 500;
 }
 
 aside {
@@ -114,9 +91,49 @@ aside div {
 
 aside div.logo img {
     width: 200px;
+}
+
+aside div.logo p {
     padding: 5%;
 }
 
 aside div.logo a.button-outline {
     border: 1px solid white;
+}
+
+@media (min-width: 600px){
+
+    aside input.button-outline, input.button-line {
+        margin: 3% auto ;
+    }
+
+    aside input.button-outline {
+        margin-top: 3%;
+    }
+
+    aside div.logo p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1150px){
+    .login, .register {
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: 50% 50%;
+        height: 100%;
+    }
+
+    .login main, .register main {
+        align-self: center;
+    }
+
+    aside input[type=submit] {
+        width: 40%;
+    }
+
+    aside div.logo p {
+        padding: 0 20%;
+        line-height: 1.5;
+    }
 }
