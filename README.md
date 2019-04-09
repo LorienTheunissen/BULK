@@ -22,13 +22,14 @@ Pagina | Functie
 `search.html` | Startpagina voor mensen die ingelogd zijn, met uitgebreide zoekfunctie
 `products.html` | Overzicht met alle beschikbare producten
 `suppliers.html`| Overzicht met alle leveranciers
-`middlemen.html` | Overzicht met alle initiatieven in de buurt
+`distributors.html` | Overzicht met alle initiatieven in de buurt
 `product.html`| 1 specifiek product
 `supplier.html`| 1 specifieke leverancier
+`distributor.html` | 1 specifieke verdeler
 `basket.html`| Winkelmandje
-`dashboard.html`| Dashboard voor leverancier
-`dashboard/products.html`| Overzicht van producten die leverancier verkoopt
-`dashboard/settings.html`| Overzicht van instellingen voor leverancier
+`suppliers/dashboard.html`| Dashboard voor leverancier
+`suppliers/products.html`| Overzicht van producten die leverancier verkoopt
+`suppliers/settings.html`| Overzicht van instellingen voor leverancier
 
 
 ### To do
