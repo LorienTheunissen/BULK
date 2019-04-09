@@ -90,7 +90,7 @@ header .search input[type=text]{
     margin-right: 1%;
 }
 
-header .search input[type=submit] {
+header .search input[type=submit], .add_product .button {
     background-color: #306953;
     height: 50px;
     color: white;
@@ -136,4 +136,18 @@ main {
 
 main h1 {
     font-family: 'Avenir Heavy';
+}
+
+/* HIER STOPT CSS VOOR MENU */
+
+main .table ul {
+    display: grid;
+    grid-template-columns: repeat(7, 14%);
+    list-style-type: none;
+    padding: 0;
+    justify-items: start;
+}
+
+main .table .title {
+    font-family: "Avenir Heavy";
 }
