@@ -26,7 +26,6 @@ Pagina | Functie
 `product.html`| 1 specifiek product
 `supplier.html`| 1 specifieke leverancier
 `basket.html`| Winkelmandje
-
 `dashboard.html`| Dashboard voor leverancier
 `dashboard/products.html`| Overzicht van producten die leverancier verkoopt
 `dashboard/settings.html`| Overzicht van instellingen voor leverancier
