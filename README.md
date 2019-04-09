@@ -27,6 +27,10 @@ Pagina | Functie
 `supplier.html`| 1 specifieke leverancier
 `basket.html`| Winkelmandje
 
+`dashboard.html`| Dashboard voor leverancier
+`dashboard/products.html`| Overzicht van producten die leverancier verkoopt
+`dashboard/settings.html`| Overzicht van instellingen voor leverancier
+
 
 ### To do
 
@@ -70,10 +74,10 @@ Pagina | Functie
 * Startbestand aanmaken
 
 #### [Product.html](https://lorientheunissen.github.io/bulk/product.html)
-* Startbestand aanmaken
+* ~~Startbestand aanmaken~~
 
 #### [Supplier.html](https://lorientheunissen.github.io/bulk/Supplier.html)
-* Startbestand aanmaken
+* ~~Startbestand aanmaken~~
 
 #### [Basket.html](https://lorientheunissen.github.io/bulk/basket.html)
 * Startbestand aanmaken
