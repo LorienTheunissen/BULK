@@ -73,7 +73,7 @@ input.button-line {
 }
 
 aside input.button-outline, input.button-line {
-    margin: 3% auto ;
+    margin: 3% auto;
 }
 
 input[type=submit]:hover {
@@ -105,10 +105,10 @@ aside div.logo a.button-outline {
     border: 1px solid white;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
 
     aside input.button-outline, input.button-line {
-        margin: 3% auto ;
+        margin: 3% auto;
     }
 
     aside input.button-outline {
@@ -120,7 +120,7 @@ aside div.logo a.button-outline {
     }
 }
 
-@media (min-width: 1150px){
+@media (min-width: 1150px) {
     .login, .register {
         display: grid;
         align-items: stretch;

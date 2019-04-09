@@ -107,7 +107,7 @@ a {
     padding: 10%;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
     div.logo {
         display: block;
     }
@@ -119,7 +119,7 @@ a {
     }
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
     .intro nav ul {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -140,7 +140,7 @@ a {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .intro {
         padding-bottom: 10%;
     }
@@ -154,7 +154,7 @@ a {
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .how {
         display: grid;
         grid-template-columns: 50% 50%;
