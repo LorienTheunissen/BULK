@@ -45,11 +45,13 @@
         </div>
     </div>
     <div class="product">
-        <div class="product-img" style="background-image: url(images/products/BULK_products_kersen.jpg);"></div>
-        <div class="product-info">
-            <h1 class="product-title">Product titel</h1>
-            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias asperiores, aspernatur consequatur
-                dolores fugit harum placeat quae?</p>
+        <div class="product-row1">
+            <div class="product-img" style="background-image: url(images/products/BULK_products_kersen.jpg);"></div>
+            <div class="product-info">
+                <h1 class="product-title">Product titel</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+                    asperiores, aspernatur consequatur
+                    dolores fugit harum placeat quae?</p>
                 <ul class="product-data">
                     <li>Minimum prijs per kg</li>
                     <li>€ 5,-</li>
@@ -60,8 +62,29 @@
                     <li>Resterende titel</li>
                     <li>5 dagen 2 uur</li>
                 </ul>
+            </div>
         </div>
-
+        <div class="product-row2">
+            <div class="product-supplier">
+                <img alt="logo" src="images/avatars/BULK_avatar_supplier_logo_1.jpeg">
+                <h3>Naam verkoper</h3>
+                <form action="supplier.html">
+                    <input type="submit" value="Contacteer verkoper">
+                </form>
+            </div>
+            <div class="product-order">
+                <form action="product.html" class="product-order" method="POST">
+                    <input placeholder="Aantal" required type="text">
+                    <select id="soort" required>
+                        <option disabled selected>Selecteer eenheid</option>
+                        <option value="kilogram">Kilogram</option>
+                        <option value="gram">Gram</option>
+                    </select>
+                    <input type="submit" value="Bestel">
+                </form>
+                <p id="error">Hier komen de error berichten voor het invullen van de bestelling.</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>

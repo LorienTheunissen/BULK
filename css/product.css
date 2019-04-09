@@ -2,6 +2,14 @@ body {
     font-family: "Avenir Book";
 }
 
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+input[type=submit]:hover{
+    background-color: #204637
+}
+
 div.container {
     margin: 3%;
 }
@@ -14,7 +22,7 @@ div.container {
     text-decoration-line: underline;
 }
 
-.product {
+.product .product-row1, .product-row2 {
     margin: 5%;
     display: grid;
     grid-template-columns: 48% 48%;
@@ -28,6 +36,13 @@ div.container {
     height: 350px;
     border-radius: 6px;
     text-align: end;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.product .product-info {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
 }
 
 .product .product-description {
@@ -38,7 +53,6 @@ div.container {
     padding-left: 0;
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-top: 5%;
 }
 
 .product-data li {
@@ -49,11 +63,49 @@ div.container {
 
 .product-supplier {
     display: grid;
-    grid-template-columns: 15% 30% 20%;
+    grid-template-columns: 10% 30% auto;
+    align-items: start;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.product-order {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    align-items: start;
+}
+
+.product-order input[type=submit], .product-supplier input {
+    background-color: #306953;
+    border: none;
+    height: 50px;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+.product-supplier input {
+    width: 200px;
 }
 
 .product-supplier img {
-    height: 75px;
+    height: 50px;
+}
+
+.product-order input, select {
+    padding: 5px 12px;
+    height: 50px;
+    border: 1px solid #306953;
+    border-radius: 6px;
+    font-size: 0.9em;
+    display: inline;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+p#error {
+    color: red;
 }
 
 @media (min-width: 650px) {
