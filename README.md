@@ -11,6 +11,7 @@ Product Lab 2
 #### Git commit
 * Reformat broncode alvorens je commit
 * Commit berichten: "BULK / (actie)"
+* Bij update van README.md, geen commit-bericht toevoegen (standaard: "Update README.md")
 
 ### Pagina's
 
