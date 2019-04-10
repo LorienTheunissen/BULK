@@ -149,7 +149,7 @@ div.products {
 }
 
 .product-actions div.supplier img {
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
 }
 
@@ -159,7 +159,7 @@ div.products {
 }
 
 .product-actions div.button {
-    grid-column: 2 / span 1
+    grid-column: 2 / span 1;
 }
 
 div.button {
@@ -207,7 +207,7 @@ div.button {
     }
 
     div.products {
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
 }
 
