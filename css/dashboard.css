@@ -78,23 +78,44 @@ header .search .fas {
     color: #306953;
 }
 
-header .search input[type=text]{
+.add_product input, .add_product select {
+    margin-bottom: 5%;
+}
+
+header .search input[type=text], .add_product input, .add_product select {
     background-color: white;
     border: 1px solid #306953;
     height: 50px;
     text-decoration-line: none;
     padding: 5px 12px;
     font-size: 0.9em;
-    width: 30%;
     border-radius: 6px;
     margin-right: 1%;
+}
+
+header .search input[type=text] {
+    width: 30%;
+}
+
+.add_product input, .add_product select {
+    width: 100%;
+}
+
+.add_product label {
+    line-height: 2;
+}
+
+.add_product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 2%
 }
 
 header .search input[type=submit], .add_product .button {
     background-color: #306953;
     height: 50px;
     color: white;
-    width: 10%;
     padding: 5px 12px;
     font-size: 0.9em;
     text-decoration-line: none;
@@ -102,13 +123,22 @@ header .search input[type=submit], .add_product .button {
     box-sizing: border-box;
 }
 
+header .search input[type=submit] {
+    width: 20%
+}
+.add_product .button {
+    width: 50%;
+    align-self: end;
+    justify-self: end;
+}
+
+
 header .search input[type=submit]:hover {
     font-weight: 500;
 }
 
 header .user {
     display: grid;
-    /*grid-template-columns: 50% 50%;*/
     align-items: center;
     padding-right: 10%;
 }

@@ -5,7 +5,7 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>BULK - Dashboard</title>
+    <title>BULK - Mijn producten</title>
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -18,8 +18,8 @@
     </div>
     <nav>
         <a href="dashboard.html"><span><i class="fas fa-home"></i></span>Startpagina</a>
-        <a class="active" href="products.html"><i class="fas fa-tractor"></i>Mijn producten</a>
-        <a href="#"><i class="fas fa-dolly"></i>Item</a>
+        <a class="active" href="products.html"><i class="fas fa-plus"></i>Product toevoegen</a>
+        <a href="#"><i class="fas fa-dolly"></i>Mijn producten</a>
         <a href="#"><i class="fas fa-cash-register"></i>Item</a>
         <a href="#"><i class="fas fa-cog"></i>Instellingen</a>
         <a href="#"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
@@ -40,6 +40,45 @@
 </header>
 <main>
     <div class="add_product">
+        <div>
+            <label for="name">Wat is de naam van het product?</label>
+            <br>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="category">Tot welke categorie behoort dit product?</label>
+            <br>
+            <select id="category" required>
+                <option disabled selected>Selecteer categorie</option>
+                <option value="fruit">Fruit</option>
+                <option value="vegetables">Groenten</option>
+            </select>
+        </div>
+        <div>
+            <label for="minimum">Wat is de minimum hoeveelheid dat men mag aankopen?</label>
+            <br>
+            <input type="text" id="minimum">
+        </div>
+        <div>
+            <label for="maximum">Wat is de maximaal beschikbare hoeveelheid?</label>
+            <br>
+            <input type="text" id="maximum">
+        </div>
+        <div>
+            <label for="deadline">Hoe lang krijgt men de tijd om dit product aan te kopen?</label>
+            <br>
+            <input type="date" id="deadline" style="font-family: 'Avenir Book';">
+        </div>
+        <div>
+            <label for="date_pickup">Wanneer mag men dit product komen afhalen?</label>
+            <br>
+            <input type="date" id="date_pickup" style="font-family: 'Avenir Book';">
+        </div>
+        <div>
+            <label for="place_pickup">Waar mag men dit product komen afhalen?</label>
+            <br>
+            <input type="text" id="place_pickup">
+        </div>
         <input class="button" type="submit" value="Voeg product toe">
     </div>
 </main>
