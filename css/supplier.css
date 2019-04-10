@@ -2,6 +2,10 @@ body {
     font-family: "Avenir Book";
 }
 
+h1, h2 {
+    font-family: 'Avenir Heavy';
+}
+
 textarea:focus, input:focus, select:focus {
     outline: none;
 }
@@ -23,12 +27,61 @@ div.container {
 }
 
 div.supplier {
+    margin: 3% 0;
     display: grid;
     grid-template-columns: 30% 70%;
+    grid-gap: 4%;
 }
 
 div.supplier .supplier-info {
-    background-color: tomato;
+    background-color: #E4E4E4;
+    justify-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 6px 9px #E4E4E4;
+    padding: 5%;
+    text-align: center;
+}
+
+div.supplier .supplier-avatar {
+    margin: 3% auto;
+}
+
+div.supplier .supplier-avatar img {
+    height: 100px;
+    border-radius: 50px;
+}
+
+div.supplier .supplier-name h2{
+    margin-bottom: 0;
+}
+
+div.supplier .supplier-name p{
+    margin-top: 1%;
+}
+
+div.supplier h3 {
+    font-family: "Avenir Heavy";
+    margin-top: 10%;
+}
+
+div.supplier p {
+    line-height: 1.5;
+}
+
+div.supplier .supplier-category img {
+    height: 50px;
+}
+
+div.supplier .supplier-button input[type=submit] {
+    background-color: #306953;
+    border: none;
+    height: 50px;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    margin-top: 10%;
+    width: 50%;
 }
 
 @media (min-width: 650px) {

@@ -6,7 +6,7 @@ textarea:focus, input:focus, select:focus {
     outline: none;
 }
 
-input[type=submit]:hover{
+form input[type=submit]:hover{
     background-color: #204637
 }
 
