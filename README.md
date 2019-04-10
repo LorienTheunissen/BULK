@@ -67,7 +67,6 @@ Pagina | Functie
 * ~~Startbestand aanmaken~~
 * Navigatie vastzetten vanboven
 * Sorteerfilter toevoegen
-* Front-end voor leveranciers maken
 * Footer toevoegen
 
 #### [Middlemen.html](https://lorientheunissen.github.io/bulk/middlemen.html)
@@ -76,10 +75,10 @@ Pagina | Functie
 #### [Product.html](https://lorientheunissen.github.io/bulk/product.html)
 * ~~Startbestand aanmaken~~
 
-#### [Supplier.html](https://lorientheunissen.github.io/bulk/Supplier.html)
+#### [Supplier.html](https://lorientheunissen.github.io/bulk/supplier.html)
 * ~~Startbestand aanmaken~~
+* Producten per leverancier toevoegen
 
 #### [Basket.html](https://lorientheunissen.github.io/bulk/basket.html)
 * Startbestand aanmaken
-
 
