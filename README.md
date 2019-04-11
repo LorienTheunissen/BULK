@@ -15,23 +15,25 @@ Product Lab 2
 
 ### Pagina's
 
-Pagina | Functie
---- | ---
-`register.html` | Registreren
-`login.html` | Inloggen
-`index.html` | Startpagina voor mensen die niet ingelogd zijn
-`search.html` | Startpagina voor mensen die ingelogd zijn, met uitgebreide zoekfunctie
-`products.html` | Overzicht met alle beschikbare producten
-`suppliers.html`| Overzicht met alle leveranciers
-`distributors.html` | Overzicht met alle initiatieven in de buurt
-`product.html`| 1 specifiek product
-`supplier.html`| 1 specifieke leverancier
-`distributor.html` | 1 specifieke verdeler
-`basket.html`| Winkelmandje
-`suppliers/dashboard.html`| Dashboard voor leverancier
-`suppliers/products.html`| Overzicht van producten die leverancier verkoopt
-`suppliers/settings.html`| Overzicht van instellingen voor leverancier
+Pagina | Functie | SB | RE
+--- | --- | --- | ---
+`register.html` | Registreren | OK | OK
+`login.html` | Inloggen | OK | OK
+`index.html` | Startpagina voor mensen die niet ingelogd zijn | OK | OK
+`search.html` | Startpagina voor mensen die ingelogd zijn, met uitgebreide zoekfunctie |  | 
+`products.html` | Overzicht met alle beschikbare producten | OK | OK
+`suppliers.html`| Overzicht met alle leveranciers | OK  | OK
+`distributors.html` | Overzicht met alle initiatieven in de buurt |  | 
+`product.html`| 1 specifiek product | OK | OK
+`supplier.html`| 1 specifieke leverancier| OK | OK
+`distributor.html` | 1 specifieke verdeler|  | 
+`basket.html`| Winkelmandje|  | 
+`suppliers/dashboard.html`| Dashboard voor leverancier| OK | /
+`suppliers/products.html`| Overzicht van producten die leverancier verkoopt|  | /
+`suppliers/settings.html`| Overzicht van instellingen voor leverancier|  | /
 
+SB = startbestand
+RE = responsive
 
 ### To do
 
@@ -70,7 +72,7 @@ Pagina | Functie
 * Sorteerfilter toevoegen
 * Footer toevoegen
 
-#### [Middlemen.html](https://lorientheunissen.github.io/bulk/middlemen.html)
+#### [Distributor.html](https://lorientheunissen.github.io/bulk/middlemen.html)
 * Startbestand aanmaken
 
 #### [Product.html](https://lorientheunissen.github.io/bulk/product.html)
