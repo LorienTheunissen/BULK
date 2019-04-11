@@ -7,7 +7,7 @@
     <title>BULK - Product</title>
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/progressbar.css">
+    <link href="css/progressbar.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
 </head>
 <body>
@@ -78,14 +78,14 @@
             <div class="product-order">
                 <form action="product.html" class="product-order" method="POST">
                     <div class="order-fields">
-                        <input placeholder="Aantal" required type="text" id="aantal">
+                        <input id="aantal" placeholder="Aantal" required type="text">
                         <select id="soort" required>
                             <option disabled selected>Selecteer eenheid</option>
                             <option value="kilogram">Kilogram</option>
                             <option value="gram">Gram</option>
                         </select>
                     </div>
-                    <input type="submit" value="Bestel" id="order-button">
+                    <input id="order-button" type="submit" value="Bestel">
                 </form>
                 <p id="error">Hier komen de error berichten voor het invullen van de bestelling.</p>
             </div>
