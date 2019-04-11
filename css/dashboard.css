@@ -71,7 +71,7 @@ header {
     padding: 0.9% 20px;
     background-color: white;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 70% 30%;
 }
 
 header .search .fas {
@@ -126,6 +126,7 @@ header .search input[type=submit], .add_product .button {
 header .search input[type=submit] {
     width: 20%
 }
+
 .add_product .button {
     width: 50%;
     align-self: end;
