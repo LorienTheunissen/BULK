@@ -18,19 +18,16 @@ div.container {
     margin: 3%;
 }
 
+.main .breadcrumbs {
+    margin-bottom: 3%;
+}
+
 .main .breadcrumbs a {
     color: #306953;
 }
 
 .main .breadcrumbs a:hover {
     text-decoration-line: underline;
-}
-
-div.supplier {
-    margin: 3% auto 0 auto;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 2%;
 }
 
 div.supplier .supplier-info {
@@ -42,17 +39,13 @@ div.supplier .supplier-info {
     text-align: center;
 }
 
-div.supplier .supplier-avatar {
-    margin: 3% auto;
-}
-
 div.supplier .supplier-avatar img {
     height: 100px;
     border-radius: 50px;
 }
 
 div.supplier .supplier-name h2{
-    margin-bottom: 0;
+    margin: 0;
 }
 
 div.supplier .supplier-name p{
@@ -83,12 +76,13 @@ div.supplier .supplier-button input[type=submit], .product-actions .button input
 }
 
 div.supplier .supplier-button input[type=submit] {
-    width: 50%;
+    width: 80%;
     margin: 5% 0;
 }
 
 .product-actions .button input[type=submit] {
-    width: 100%
+    width: 100%;
+    margin-bottom: 3%;
 }
 
 div.supplier-product {
@@ -96,9 +90,7 @@ div.supplier-product {
     background-color: white;
     border-radius: 6px;
     box-shadow: 0px 6px 9px #E4E4E4;
-    display: grid;
-    grid-template-columns: 35% 35% 30%;
-    margin-bottom: 2%;
+    margin-top: 5%;
 }
 
 div.supplier-product .product-img {
@@ -107,13 +99,17 @@ div.supplier-product .product-img {
     background-size: cover;
     height: 250px;
     width: 100%;
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 6px 6px 0px 0px;
     text-align: end;
 }
 
 div.supplier-product .product-card {
     justify-self: start;
-    padding: 2% 10%;
+    padding: 2% 10% 0 10%;
+}
+
+div.supplier-product .product-actions {
+    padding: 0 10% 5% 10%;
 }
 
 div.supplier-product .product-icons ul {
@@ -133,15 +129,44 @@ div.supplier-product .product-icons ul {
     padding-left: 5px;
 }
 
-div.supplier-product .product-actions {
-    align-self: end;
-    justify-self: end;
-    margin: 10%;
-}
-
-
 @media (min-width: 650px) {
     div.container {
         margin: 3% 10%;
+    }
+}
+
+@media (min-width: 800px){
+    div.supplier-product {
+        display: grid;
+        grid-template-columns: 35% 35% 30%;
+        margin-bottom: 2%;
+    }
+
+    div.supplier-product .product-img {
+        border-radius: 6px 0 0 6px;
+    }
+
+    div.supplier-product .product-actions {
+        align-self: end;
+        justify-self: end;
+        margin: 10%;
+    }
+
+    .product-actions .button input[type=submit] {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1100px){
+    div.supplier {
+        margin: 3% auto 0 auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 2%;
+    }
+
+    div.supplier-product {
+        margin-top: 0;
     }
 }
