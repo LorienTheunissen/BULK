@@ -69,18 +69,20 @@
                 <img alt="logo" src="images/avatars/BULK_avatar_supplier_logo_1.jpeg">
                 <h3>Naam verkoper</h3>
                 <form action="supplier.html">
-                    <input type="submit" value="Contacteer verkoper">
+                    <input id="contact-supplier" type="submit" value="Contacteer verkoper">
                 </form>
             </div>
             <div class="product-order">
                 <form action="product.html" class="product-order" method="POST">
-                    <input placeholder="Aantal" required type="text">
-                    <select id="soort" required>
-                        <option disabled selected>Selecteer eenheid</option>
-                        <option value="kilogram">Kilogram</option>
-                        <option value="gram">Gram</option>
-                    </select>
-                    <input type="submit" value="Bestel">
+                    <div class="order-fields">
+                        <input placeholder="Aantal" required type="text" id="aantal">
+                        <select id="soort" required>
+                            <option disabled selected>Selecteer eenheid</option>
+                            <option value="kilogram">Kilogram</option>
+                            <option value="gram">Gram</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Bestel" id="order-button">
                 </form>
                 <p id="error">Hier komen de error berichten voor het invullen van de bestelling.</p>
             </div>
