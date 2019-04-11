@@ -1,0 +1,21 @@
+body {
+    font-family: "Avenir Book";
+}
+
+h1, h2 {
+    font-family: 'Avenir Heavy';
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+div.container {
+    margin: 3%;
+}
+
+@media (min-width: 650px) {
+    div.container {
+        margin: 3% 10%;
+    }
+}
