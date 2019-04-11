@@ -1,0 +1,113 @@
+body {
+    font-family: "Avenir Book";
+}
+
+h1, h2 {
+    font-family: 'Avenir Heavy';
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+
+input[type=submit]:hover{
+    background-color: #204637
+}
+
+div.container {
+    margin: 3%;
+}
+
+div.filter {
+    margin-bottom: 3%;
+}
+
+div.filter div {
+    padding: 1% 0;
+    display: inline;
+}
+
+div.filter select {
+    height: 30px;
+    border: 1px solid #306953;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+div.supplier {
+    background-color: #E4E4E4;
+    justify-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 6px 9px #E4E4E4;
+    padding: 5%;
+    text-align: center;
+    margin: 5% 0;
+}
+
+div.supplier .supplier-avatar img {
+    height: 100px;
+    border-radius: 50px;
+}
+
+div.supplier .supplier-name h2{
+    margin: 0;
+}
+
+div.supplier .supplier-name p{
+    margin-top: 1%;
+}
+
+div.supplier h3 {
+    font-family: "Avenir Heavy";
+    margin-top: 10%;
+}
+
+div.supplier p {
+    line-height: 1.8;
+}
+
+div.supplier .supplier-category img {
+    height: 40px;
+}
+
+div.supplier .supplier-button input[type=submit] {
+    background-color: #306953;
+    border: none;
+    height: 50px;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    width: 80%;
+    margin: 5% 0;
+}
+
+
+@media (min-width: 650px){
+    div.container {
+        margin: 3% 10%;
+    }
+
+    div.suppliers {
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-gap: 3%
+    }
+
+    div.supplier {
+        margin: 0;
+    }
+}
+
+@media (min-width: 900px){
+    div.suppliers {
+        grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
+    }
+}
+
+@media (min-width: 1024px){
+    div.suppliers {
+        grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+    }
+}
