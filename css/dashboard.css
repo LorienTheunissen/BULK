@@ -109,7 +109,7 @@ header .search input[type=text] {
     width: 100%;
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-gap: 2%
+    grid-gap: 4%
 }
 
 header .search input[type=submit], .add_product .button {
@@ -166,6 +166,12 @@ main {
 
 main h1 {
     font-family: 'Avenir Heavy';
+}
+
+.minimum, .maximum {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
 }
 
 /* HIER STOPT CSS VOOR MENU */
