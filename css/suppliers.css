@@ -48,6 +48,7 @@ div.supplier {
 div.supplier .supplier-avatar img {
     height: 100px;
     border-radius: 50px;
+    margin: 3%;
 }
 
 div.supplier .supplier-name h2{
