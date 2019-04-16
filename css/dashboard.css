@@ -79,7 +79,7 @@ header .search .fas {
 }
 
 .add_product input, .add_product select {
-    margin-bottom: 5%;
+    margin-bottom: 3%; /* AANGEPAST */
 }
 
 header .search input[type=text], .add_product input, .add_product select {
@@ -112,6 +112,11 @@ header .search input[type=text] {
     grid-gap: 4%
 }
 
+p#error {
+    color: red;
+    margin-bottom: 3%;
+}
+
 header .search input[type=submit], .add_product .button {
     background-color: #306953;
     height: 50px;
@@ -132,7 +137,6 @@ header .search input[type=submit] {
     align-self: end;
     justify-self: end;
 }
-
 
 header .search input[type=submit]:hover {
     font-weight: 500;
@@ -169,7 +173,7 @@ main h1 {
     font-family: 'Avenir Heavy';
 }
 
-.minimum, .maximum {
+.minimum, .maximum, .deadline {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 4%;

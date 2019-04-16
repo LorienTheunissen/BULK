@@ -39,30 +39,54 @@
     </div>
 </header>
 <main>
+    <h1>Product toevoegen</h1>
+    <div class="error">
+        <p id="error">Hier komen de error berichten voor het toevoegen van een nieuw product.</p>
+    </div>
+    <form action="addproduct.html" method="POST">
     <div class="add_product">
         <div>
             <label for="name">Wat is de naam van het product?</label>
             <br>
-            <input type="text" id="name">
+            <input id="name" type="text">
         </div>
         <div>
             <label for="category">Tot welke categorie behoort dit product?</label>
             <br>
             <select id="category" required>
                 <option disabled selected>Selecteer categorie</option>
+                <option value="aardappelen">Aardappelen</option>
+                <option value="brood">Brood & gebak</option>
+                <option value="beleg">Broodbeleg</option>
+                <option value="eieren">Eieren</option>
                 <option value="fruit">Fruit</option>
-                <option value="vegetables">Groenten</option>
+                <option value="fruitsap">Fruitsap</option>
+                <option value="groenten">Groenten</option>
+                <option value="kruiden">Kruiden</option>
+                <option value="schaap">Lams- en schapenvlees</option>
+                <option value="pluimvee">Pluimvee</option>
+                <option value="rund">Runds- en kalfsvlees</option>
+                <option value="varken">Varkensvlees</option>
+                <option value="zuivel">Zuivel</option>
             </select>
         </div>
         <div>
             <label for="minimum">Wat is de minimum hoeveelheid dat men mag aankopen?</label>
             <br>
             <div class="minimum">
-                <input type="text" id="minimum">
+                <input id="minimum" type="text">
                 <select id="minimum" required>
-                    <option disabled selected>Selecteer eenheid</option>
-                    <option value="gram">Gram</option>
-                    <option value="kilogram">Kilogram</option>
+                    <optgroup label="Aantal">
+                        <option value="stuks">stuks</option>
+                    </optgroup>
+                    <optgroup label="Gewicht">
+                        <option value="g">gram</option>
+                        <option value="kg">kilogram</option>
+                    </optgroup>
+                    <optgroup label="Inhoudsmaat">
+                        <option value="ml">mililiter</option>
+                        <option value="l">liter</option>
+                    </optgroup>
                 </select>
             </div>
         </div>
@@ -70,31 +94,51 @@
             <label for="maximum">Wat is de maximaal beschikbare hoeveelheid?</label>
             <br>
             <div class="maximum">
-                <input type="text" id="maximum">
+                <input id="maximum" type="text">
                 <select id="maximum" required>
-                    <option disabled selected>Selecteer eenheid</option>
-                    <option value="gram">Gram</option>
-                    <option value="kilogram">Kilogram</option>
+                    <optgroup label="Aantal">
+                        <option value="stuks">stuks</option>
+                    </optgroup>
+                    <optgroup label="Gewicht">
+                        <option value="g">gram</option>
+                        <option value="kg">kilogram</option>
+                    </optgroup>
+                    <optgroup label="Inhoudsmaat">
+                        <option value="ml">mililiter</option>
+                        <option value="l">liter</option>
+                    </optgroup>
                 </select>
             </div>
         </div>
         <div>
             <label for="deadline">Hoe lang krijgt men de tijd om dit product aan te kopen?</label>
             <br>
-            <input type="date" id="deadline" style="font-family: 'Avenir Book';">
+            <div class="deadline">
+                <input id="deadline" style="font-family: 'Avenir Book';" type="date">
+                <input id="deadline" style="font-family: 'Avenir Book';" type="time">
+            </div>
         </div>
         <div>
-            <label for="date_pickup">Wanneer mag men dit product komen afhalen?</label>
+            <label for="pickup">Wanneer mag men dit product komen afhalen?</label>
             <br>
-            <input type="date" id="date_pickup" style="font-family: 'Avenir Book';">
+            <input id="pickup" style="font-family: 'Avenir Book';" type="date">
         </div>
         <div>
-            <label for="place_pickup">Waar mag men dit product komen afhalen?</label>
+            <label for="location">Waar mag men dit product komen afhalen?</label>
             <br>
-            <input type="text" id="place_pickup">
+            <select id="location">
+                <option disabled selected>Selecteer adres</option>
+                <option value="adres">Hier worden adressen uit database geïmporteerd</option>
+            </select>
         </div>
+        <div>
+            <label for="picture">Laad een foto op </label>
+            <input accept="image/png, image/jpeg" id="picture" name="picture" type="file">
+        </div>
+        <div></div>
         <input class="button" type="submit" value="Voeg product toe">
     </div>
+    </form>
 </main>
 </body>
 </html>
