@@ -167,6 +167,7 @@ header .user .avatar img {
 main {
     margin-left: 330px;
     margin-top: 55px;
+    margin-right: 55px;
 }
 
 main h1 {
@@ -181,14 +182,150 @@ main h1 {
 
 /* HIER STOPT CSS VOOR MENU */
 
-main .table ul {
-    display: grid;
-    grid-template-columns: repeat(7, 14%);
-    list-style-type: none;
-    padding: 0;
-    justify-items: start;
+/* HIER START CSS VOOR PRODUCTS.HTML */
+
+table.products,
+table.orders {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-main .table .title {
-    font-family: "Avenir Heavy";
+table.products th, td,
+table.orders th, td {
+    height: 50px;
+    text-align: left;
+    width: 160px;
+}
+
+table.products td:first-child, table.products th:first-child,
+table.orders td:first-child, table.orders th:first-child{
+    padding-left: 2%;
+}
+
+table.products tr:nth-child(even),
+table.orders tr:nth-child(even){
+    background-color: white;
+}
+
+table.products tr:hover,
+table.orders tr:hover{
+    background-color: #ddd;
+}
+
+table.products tr.th,
+table.orders tr.th{
+    background-color: #306953;
+    color: white;
+}
+
+.products .button,
+.orders .button{
+    background-color: #306953;
+    color: white;
+    font-size: 0.9em;
+    padding: 5%;
+    text-decoration-line: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 0 solid transparent;
+}
+
+table.products .product_link,
+table.orders .product_link {
+    width: 20%;
+    text-align: center;
+}
+
+/* FILTER */
+
+div.filter {
+    margin-bottom: 3%;
+}
+
+div.filter div {
+    padding: 1% 0;
+    display: inline;
+}
+
+div.filter select {
+    height: 30px;
+    border: 1px solid #306953;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+/* PRINT BUTTON */
+
+input[type=submit].print {
+    background-color: transparent;
+    color: #306953;
+    border: 1px solid #306953;
+    height: 50px;
+    padding: 5px 12px;
+    font-size: 0.9em;
+    text-decoration-line: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+
+input[type=submit].print:hover {
+    background-color: #306953;
+    color: white;
+    border: none;
+}
+
+/* PRODUCT TABS */
+
+.intro ul {
+    padding-left: 0;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    width: 100%;
+}
+
+.intro li {
+    width: 25%
+}
+
+.intro li .icon {
+    width: 25px;
+    padding-right: 3%;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #ddd;
+    margin-bottom: 3%;
+}
+
+.tab button {
+    background-color: inherit;
+    display: inline-flex;
+    justify-content: flex-start;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1% 5%;
+    font-size: 0.9em;
+    text-decoration-line: none;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.tab button:hover {
+    background-color: #306953;
+    color: white;
+}
+
+.tab button.active {
+    background-color: #306953;
+    color: white;
+}
+
+.tab_content {
+    display: none;
 }
