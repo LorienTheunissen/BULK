@@ -39,7 +39,76 @@
     </div>
 </header>
 <main>
-    <h1>Product toevoegen</h1>
+    <h1>Mijn producten</h1>
+    <div class="filter">
+        <p>Sorteren op:</p>
+        <div class="filter-1">
+            <select>
+                <option value="datum_recent">Datum (recent)</option>
+                <option value="datum_oud">Datum (oud)</option>
+                <option value="naam">Naam</option>
+                <option value="categorie">Categorie</option>
+            </select>
+        </div>
+    </div>
+    <table class="products">
+        <tr class="th">
+            <th>Naam</th>
+            <th>Categorie</th>
+            <th>Bekeken</th>
+            <th>Geïnteresseerd</th>
+            <th>Besteld</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Aardappelen</td>
+            <td>Groenten</td>
+            <td>5 keer</td>
+            <td>3 keer</td>
+            <td>0 keer</td>
+            <td class="product_link">
+                <form action="product.html">
+                    <input class="button" type="submit" value="Bekijk">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Kersen</td>
+            <td>Fruit</td>
+            <td>5 keer</td>
+            <td>3 keer</td>
+            <td>0 keer</td>
+            <td class="product_link">
+                <form action="product.html">
+                    <input class="button" type="submit" value="Bekijk">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Melk</td>
+            <td>Zuivel</td>
+            <td>5 keer</td>
+            <td>3 keer</td>
+            <td>0 keer</td>
+            <td class="product_link">
+                <form action="product.html">
+                    <input class="button" type="submit" value="Bekijk">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Yoghurt</td>
+            <td>Zuivel</td>
+            <td>5 keer</td>
+            <td>3 keer</td>
+            <td>0 keer</td>
+            <td class="product_link">
+                <form action="product.html">
+                    <input class="button" type="submit" value="Bekijk">
+                </form>
+            </td>
+        </tr>
+    </table>
 </main>
 </body>
 </html>
