@@ -11,6 +11,10 @@ a {
     width: 25px;
 }
 
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
 /* CONTAINER */
 
 div.container {
