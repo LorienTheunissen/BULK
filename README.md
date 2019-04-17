@@ -28,60 +28,11 @@ Pagina | Functie | SB | RE
 `supplier.html`| 1 specifieke leverancier| OK | OK
 `distributor.html` | 1 specifieke verdeler|  | 
 `basket.html`| Winkelmandje|  | 
+`logout.html`| Uitloggen |  | 
 `suppliers/dashboard.html`| Dashboard voor leverancier| OK | /
-`suppliers/products.html`| Overzicht van producten die leverancier verkoopt|  | /
+`suppliers/addproduct.html`| Nieuw product toevoegen | OK | /
+`suppliers/products.html`| Overzicht van producten die leverancier verkoopt| OK  | /
+`suppliers/product.html`| 1 specifiek product die leverancier verkoopt | OK | /
 `suppliers/settings.html`| Overzicht van instellingen voor leverancier|  | /
 
-SB = startbestand
-RE = responsive
-
-### To do
-
-#### [Register.html](https://lorientheunissen.github.io/bulk/register.html)
-* ~~Startbestand aanmaken~~
-* Integratie Facebook en Google Plus account
-* ~~Content voor aside-element~~
-
-#### [Login.html](https://lorientheunissen.github.io/bulk/login.html)
-* ~~Startbestand aanmaken~~
-* Integratie Facebook en Google Plus account
-* ~~Content voor aside-element~~
-* Wachtwoord vergeten?
-
-#### [Index.html](https://lorientheunissen.github.io/bulk/index.html)
-* ~~Startbestand aanmaken~~
-* ~~Navigatie toevoegen~~
-* ~~Content voor "Home"~~
-* Content voor "Hoe werkt het?"
-* Content voor "Waarom BULK?"
-* Footer toevoegen
-
-#### [Search.html](https://lorientheunissen.github.io/bulk/search.html)
-* Startbestand aanmaken
-
-#### [Products.html](https://lorientheunissen.github.io/bulk/products.html)
-* ~~Startbestand aanmaken~~
-* Navigatie vastzetten vanboven
-* Sorteerfilter toevoegen
-* Tekst na icons en avatar in product-card moeten in het midden uitgelijnd worden
-* Footer toevoegen
-
-#### [Suppliers.html](https://lorientheunissen.github.io/bulk/suppliers.html)
-* ~~Startbestand aanmaken~~
-* Navigatie vastzetten vanboven
-* Sorteerfilter toevoegen
-* Footer toevoegen
-
-#### [Distributor.html](https://lorientheunissen.github.io/bulk/middlemen.html)
-* Startbestand aanmaken
-
-#### [Product.html](https://lorientheunissen.github.io/bulk/product.html)
-* ~~Startbestand aanmaken~~
-
-#### [Supplier.html](https://lorientheunissen.github.io/bulk/supplier.html)
-* ~~Startbestand aanmaken~~
-* Producten per leverancier toevoegen
-
-#### [Basket.html](https://lorientheunissen.github.io/bulk/basket.html)
-* Startbestand aanmaken
-
+SB = startbestand; RE = responsive
