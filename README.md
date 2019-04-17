@@ -20,7 +20,7 @@ Pagina | Functie | SB | RE
 `register.html` | Registreren | OK | OK
 `login.html` | Inloggen | OK | OK
 `index.html` | Startpagina voor mensen die niet ingelogd zijn | OK | OK
-`search.html` | Startpagina voor mensen die ingelogd zijn, met uitgebreide zoekfunctie |  | 
+`search.html` | Startpagina voor mensen die ingelogd zijn |  | 
 `products.html` | Overzicht met alle beschikbare producten | OK | OK
 `suppliers.html`| Overzicht met alle leveranciers | OK  | OK
 `distributors.html` | Overzicht met alle initiatieven in de buurt |  | 
