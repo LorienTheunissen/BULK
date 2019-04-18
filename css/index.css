@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.title {
+    margin-bottom: 5%;
+}
+
 .intro {
     background-color: #306953;
 }
@@ -97,6 +101,11 @@ a {
     background-image: url('../images/BULK_background_share.JPG');
 }
 
+.how ol li {
+    margin: 3% 0;
+    line-height: 2;
+}
+
 .why .right {
     background-image: url('../images/BULK_background_grocery bag.JPG');
 }
@@ -115,6 +124,11 @@ a {
     background-color: #f5f5f5;
     padding: 10%;
     text-align: center;
+}
+
+.footer {
+    background-color: #306953;
+    height: 200px;
 }
 
 @media (min-width: 600px) {
