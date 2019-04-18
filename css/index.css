@@ -42,7 +42,7 @@ a {
     padding: 0;
     color: white;
     display: grid;
-    justify-items: right;
+    justify-items: center;
 }
 
 .intro nav div.logo img {
@@ -82,30 +82,39 @@ a {
     color: #306953;
 }
 
-.intro .home, .right {
+.intro .home,
+.how .right,
+.why .left {
     padding: 10%;
 }
 
-.how .left {
-    background-image: url('../images/BULK_background_share.JPG');
+.how .left, .why .right {
     background-size: cover;
     background-position: center;
 }
 
 .how .left {
+    background-image: url('../images/BULK_background_share.JPG');
+}
+
+.why .right {
+    background-image: url('../images/BULK_background_grocery bag.JPG');
+}
+
+.how .left, .why .right {
     height: 640px;
     width: 100%;
     padding-top: 10%;
 }
 
-.how .right {
+.how .right, .why .left {
     text-align: center;
 }
 
-.why {
-    background-color: #306953;
-    color: white;
+.users {
+    background-color: #f5f5f5;
     padding: 10%;
+    text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -134,7 +143,7 @@ a {
         font-size: 1.2em;
     }
 
-    .why .articles {
+    .users .articles {
         display: grid;
         grid-template-columns: 32% 32% 32%;
         grid-gap: 4%;
@@ -156,7 +165,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-    .how {
+    .how, .why {
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -169,6 +178,10 @@ a {
 
     .intro nav .logo {
         display: grid;
+    }
+
+    .intro nav ul {
+        justify-items: end;
     }
 
     .intro nav li {
