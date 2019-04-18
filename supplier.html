@@ -86,73 +86,82 @@
                         </p>
                     </div>
                 </div>
-                <div class="supplier-button">
-                    <form action="supplier.html">
-                        <input type="submit" value="Contacteer verkoper">
-                    </form>
+            </div>
+            <!-- HIER KOMT DE TAB -->
+            <div class="tabs">
+                <div class="tab">
+                    <button class="tab_links" onclick="openTab(event, 'products')">Producten</button>
+                    <button class="tab_links" onclick="openTab(event, 'reviews')">Reviews</button>
+                    <button class="tab_links" onclick="openTab(event, 'contact')">Contact</button>
+                </div>
+                <div class="tab_content" id="products">
+                    <div class="supplier-products">
+                        <div class="supplier-product">
+                            <div class="product-img" style="background-image: url('images/products/BULK_products_witloof.jpg')">
+                            </div>
+                            <div class="product-card">
+                                <h2 class="product-name">Witloof</h2>
+                                <div class="progress-container">
+                                </div>
+                                <div class="product-icons">
+                                    <ul>
+                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
+                                        </li>
+                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
+                                        </li>
+                                        <li><img alt="basket" class="icon"
+                                                 src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <div class="button">
+                                    <form action="product.html">
+                                        <input type="submit" value="Bekijk product">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="supplier-product">
+                            <div class="product-img"
+                                 style="background-image: url('images/products/BULK_products_aardbeien.jpg')">
+                            </div>
+                            <div class="product-card">
+                                <h2 class="product-name">Aardbeien</h2>
+                                <div class="product-icons">
+                                    <ul>
+                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
+                                        </li>
+                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
+                                        </li>
+                                        <li><img alt="basket" class="icon"
+                                                 src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <div class="button">
+                                    <form action="product.html">
+                                        <input type="submit" value="Bekijk product">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content" id="reviews">
+                    <h2>Reviews</h2>
+                    <p>Hier kan de gebruiker reviews lezen en schrijven.</p>
+                </div>
+                <div class="tab_content" id="contact">
+                    <h2>Contactformulier</h2>
+                    <p>Via deze tab kan men contact opnemen met de leverancier.</p>
                 </div>
             </div>
-            <div class="supplier-products">
-                <div class="supplier-product">
-                    <div class="product-img" style="background-image: url('images/products/BULK_products_witloof.jpg')">
-                    </div>
-                    <div class="product-card">
-                        <h2 class="product-name">Witloof</h2>
-                        <div class="progress-container">
-                        </div>
-                        <div class="product-icons">
-                            <ul>
-                                <li><img alt="basket" class="icon"
-                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
-                                </li>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
-                                </li>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
-                                </li>
-                                <li><img alt="basket" class="icon"
-                                         src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-actions">
-                        <div class="button">
-                            <form action="product.html">
-                                <input type="submit" value="Bekijk product">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="supplier-product">
-                    <div class="product-img"
-                         style="background-image: url('images/products/BULK_products_aardbeien.jpg')">
-                    </div>
-                    <div class="product-card">
-                        <h2 class="product-name">Aardbeien</h2>
-                        <div class="product-icons">
-                            <ul>
-                                <li><img alt="basket" class="icon"
-                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
-                                </li>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
-                                </li>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
-                                </li>
-                                <li><img alt="basket" class="icon"
-                                         src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-actions">
-                        <div class="button">
-                            <form action="product.html">
-                                <input type="submit" value="Bekijk product">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- HIER EINDIGT DE TAB -->
         </div>
     </div>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
