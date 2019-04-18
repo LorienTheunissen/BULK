@@ -42,7 +42,7 @@ a {
     padding: 0;
     color: white;
     display: grid;
-    justify-items: center;
+    justify-items: right;
 }
 
 .intro nav div.logo img {
@@ -54,6 +54,7 @@ a {
     font-family: "Avenir Medium";
     letter-spacing: 1px;
     line-height: 3em;
+    font-size: 1em;
 }
 
 .intro input.button-outline {
