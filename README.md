@@ -22,12 +22,12 @@ Pagina | Functie | SB | RE
 `index.html` | Startpagina voor mensen die niet ingelogd zijn | OK | OK
 `start.html` | Startpagina voor mensen die ingelogd zijn |  | 
 `products.html` | Overzicht met alle beschikbare producten | OK | OK
-`suppliers.html`| Overzicht met alle leveranciers | OK  | OK
-`initiatives.html`| Overzicht met alle initiatieven | OK  | 
-`distributors.html` | Overzicht met alle initiatieven in de buurt | OK | 
 `product.html`| 1 specifiek product | OK | OK
+`suppliers.html`| Overzicht met alle leveranciers | OK  | OK
 `supplier.html`| 1 specifieke leverancier| OK | OK
+`initiatives.html`| Overzicht met alle initiatieven | OK  | 
 `initiative.html`| 1 specifiek initatief | OK  | 
+`distributors.html` | Overzicht met alle initiatieven in de buurt | OK | 
 `distributor.html` | 1 specifieke verdeler| OK  | 
 `basket.html`| Winkelmandje|  | 
 `logout.html`| Uitloggen |  | 
