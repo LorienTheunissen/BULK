@@ -13,7 +13,7 @@
 		$user->setPasswordConfirmation($_POST['password_confirmation']);
 		
 		if($user->register()) {
-            $user->login();
+            header('Location: login');
 		}
 	}
 

@@ -1,4 +1,34 @@
-<!doctype html>
+<?php
+	require_once("bootstrap.php");
+	if (!empty ($_POST)) {
+		$user = new User;
+		try{
+			$user->login();
+		} catch( Throwable $t){
+			$error = $t->getMessage();
+		}
+		$user = new User();
+		$user->setId($_POST['id']);  
+		
+	if($user->login()) {
+		$_SESSION['id'] = $user->getId();
+	}
+
+	if($user->validEmail($_POST['email']) === true) {
+		//email is correct
+	}
+
+	else {
+		// email is not correct
+		$error = "Password & email do not match";
+	}
+	}
+
+	else {
+		$error = "Fields are required. Please fill them in.";
+	}
+
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +56,11 @@
                 <input placeholder="Wachtwoord" type="password">
                 <input placeholder="Login" type="submit" value="Login">
             </form>
-            <p id="error">Hier komen de error berichten voor het inloggen.</p>
+            <?php if ( isset($error) ): ?>
+                <p id="error"> 
+                    Hier komen de error berichten voor het inloggen.
+                </p>
+            <?php endif; ?>
         </div>
         <div>
             <p><a href="#">Wachtwoord vergeten?</a></p>

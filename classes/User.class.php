@@ -213,6 +213,15 @@
                 return $this;
         }        
 
+        public function validEmail($email) {
+                $email = $_POST['email'];
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+        }
+
         public function register() {
             $options = [
                 'cost' => 15
@@ -242,7 +251,7 @@
                         $email = $_POST['email'];
                         $password = $_POST['password'];
 
-                        $statement = $conn->prepate("SELECT * FROM users WHERE email = :email");
+                        $statement = $conn->prepare("SELECT * FROM users WHERE email = :email");
                         $statement->bindParam(':email', $email);
                         $result = $statement->execute();
                         $user->$statement->fetch(PDO::FETCH_ASSOC);
