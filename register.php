@@ -13,8 +13,7 @@
 		$user->setPasswordConfirmation($_POST['password_confirmation']);
 		
 		if($user->register()) {
-            $_SESSION['email'] = $user->getEmail();
-            
+            $user->login();
 		}
 	}
 

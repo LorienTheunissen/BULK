@@ -223,15 +223,37 @@
             try {
                         $conn = Db::getInstance();
                         $statement = $conn->prepare("INSERT INTO users(first_name, last_name, postal_code, email, tel, password) VALUES (:first_name, :last_name, :postal_code, :email, :tel, :password)");
-                        $statement->bindParam(":first_name", $this->firstName);
-                        $statement->bindParam(":last_name", $this->lastName);
-                        $statement->bindParam(":postal_code", $this->postalCode);
-                        $statement->bindParam(":email", $this->email);
-                        $statement->bindParam(":tel", $this->tel);
+                        $statement->bindParam(":first_name", $this->getFirstName());
+                        $statement->bindParam(":last_name", $this->getLastName());
+                        $statement->bindParam(":postal_code", $this->getPostalCode());
+                        $statement->bindParam(":email", $this->getEmail());
+                        $statement->bindParam(":tel", $this->getTel());
                         $statement->bindParam(":password", $password);
                         $result = $statement->execute();
-                        var_dump($result);
-                        //header("Location: login.php");
+                        return $result;
+                } catch (Throwable $t) {
+                        echo $t;
+                }
+        }
+
+        public function login() {
+                try {
+                        $conn = Db::getInstance();
+                        $email = $_POST['email'];
+                        $password = $_POST['password'];
+
+                        $statement = $conn->prepate("SELECT * FROM users WHERE email = :email");
+                        $statement->bindParam(':email', $email);
+                        $result = $statement->execute();
+                        $user->$statement->fetch(PDO::FETCH_ASSOC);
+
+                        if ( password_verify($password, $user['password']) ) {
+                                $this->setId($user['id']);
+                                $_SESSION['id'] = $this->id;
+                                header('Location: index');
+                        } else {
+                                $error = "Password and email do not match!";
+                        } 
                 } catch (Throwable $t) {
                         echo $t;
                 }
