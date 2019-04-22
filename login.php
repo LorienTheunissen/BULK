@@ -51,14 +51,14 @@
             <h3>of gebruik je e-mailadres</h3>
         </div>
         <div class="form-login">
-            <form action="products.html" method="POST">
-                <input placeholder="E-mailadres" type="email">
-                <input placeholder="Wachtwoord" type="password">
+            <form action="" method="POST">
+                <input placeholder="E-mailadres" type="email" name="email">
+                <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Login" type="submit" value="Login">
             </form>
             <?php if ( isset($error) ): ?>
                 <p id="error"> 
-                    Hier komen de error berichten voor het inloggen.
+                    <?php echo $error; ?>
                 </p>
             <?php endif; ?>
         </div>
@@ -68,10 +68,10 @@
     </main>
     <aside>
         <div class="logo">
-            <a href="index.html"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
+            <a href="index"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
-            <form action="index.html">
+            <form action="index">
                 <input class="button-outline" placeholder="Terug naar de startpagina" type="submit"
                        value="Terug naar Startpagina">
             </form>

@@ -248,22 +248,24 @@
         public function login() {
                 try {
                         $conn = Db::getInstance();
-                        $email = $_POST['email'];
-                        $password = $_POST['password'];
+		        $email = $_POST['email'];
+		        $password = $_POST['password'];
 
-                        $statement = $conn->prepare("SELECT * FROM users WHERE email = :email");
-                        $statement->bindParam(':email', $email);
-                        $result = $statement->execute();
-                        $user->$statement->fetch(PDO::FETCH_ASSOC);
+		        $statement = $conn->prepare("SELECT * FROM users WHERE email =:email");
+		        $statement->bindParam(":email", $email); // SQL Injection Safe
+		        $result = $statement->execute();
+		        $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-                        if ( password_verify($password, $user['password']) ) {
+		        if( password_verify($password, $user['password']) ){
                                 $this->setId($user['id']);
                                 $_SESSION['id'] = $this->id;
-                                header('Location: index');
-                        } else {
-                                $error = "Password and email do not match!";
-                        } 
-                } catch (Throwable $t) {
+			        header("Location: products.html");      
+		        } else {
+                                $error = "Password & email do not match";
+		        }
+                }
+
+                catch (Throwable $t) {
                         echo $t;
                 }
         }

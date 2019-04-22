@@ -36,15 +36,15 @@
     <div class="register">
         <aside>
             <div class="logo">
-                <a href="index.html"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
+                <a href="index"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua.</p>
-                <form action="index.html">
+                <form action="index">
                     <input class="button-outline" placeholder="Terug naar Startpagina" type="submit"
                         value="Terug naar Startpagina">
                 </form>
-                <form action="login.html">
+                <form action="login">
                     <input class="button-line" placeholder="Inloggen" type="submit" value="Inloggen">
                 </form>
             </div>
@@ -72,7 +72,7 @@
 
                 <?php if ( isset($error) ): ?>
                     <p id="error">
-                        Hier komen de error berichten voor het registreren.
+                        <?php echo $error; ?>
                     </p>
                 <?php endif; ?>
             </div>
