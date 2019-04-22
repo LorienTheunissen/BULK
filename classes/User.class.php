@@ -213,6 +213,24 @@
                 return $this;
         }        
 
+        public function validFirstName($firstName) {
+                $firstName = $_POST['firstName'];
+                if (!preg_match("/^[a-zA-Z ]*$/",$firstName)) {
+                        return false;
+                } else {
+                        return true;
+                } 
+        }
+
+        public function validLastName($lastName) {
+                $lastName = $_POST['lastName'];
+                if (!preg_match("/^[a-zA-Z ]*$/",$lastName)) {
+                        return false;
+                } else {
+                        return true;
+                } 
+        }
+
         public function availableEmail($email) {
                 $conn = Db::getInstance();
                 $statement = $conn->prepare("SELECT * FROM users WHERE email = :email LIMITS 1");
@@ -236,6 +254,19 @@
                     } else {
                         return false;
                     }
+        }
+
+        public function validatePassword($password, $passwordConfirmation) {
+                $password = $_POST['password'];
+                $passwordConfirmation = $_POST['password_confirmation'];
+                
+                if( !empty($password) || !empty($passwordConfirmation)  ){
+                        if ($password == $passwordConfirmation) {
+                                return true;
+                        }
+                } else {
+                        return false;
+                }
         }
 
         public function register() {

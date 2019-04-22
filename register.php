@@ -4,18 +4,51 @@
 	if ( !empty($_POST) ) {
         $user = new User();
         
-		$user->setFirstName($_POST['firstName']);
-		$user->setLastName($_POST['lastName']);
-		$user->setPostalCode($_POST['postalCode']);
-		$user->setEmail($_POST['email']);
-		$user->setTel($_POST['tel']);
-		$user->setPassword($_POST['password']);
-		$user->setPasswordConfirmation($_POST['password_confirmation']);
-		
-		if($user->register()) {
-            header('Location: login');
-		}
-	}
+        if ( $user->validFirstName($_POST['firstName']) === true ){
+            //valid first name
+        } else {
+            $error = "Invalid name";
+        }
+
+        if ( $user->validLastName($_POST['lastName']) === true ){
+            //valid last name
+        } else {
+            $error = "Invalid name";
+        }
+
+        if ( $user->availableEmail($user->getEmail()) ) {
+            // Email ready to use
+            if ( $user->validEmail($_POST['email']) === true ){
+                // valid email
+            } else {
+                $error = "Invalid email";
+            }
+        } else {
+            $error = "Email already registered";
+        }
+
+        if ($user->validatePassword($_POST['password'], $_POST['password_confirmation']) === true) {
+            // passwords match
+        } else {
+            $error = "passwords do not match";
+        }
+
+        if ( !isset($error) ) {
+            $user->setFirstName($_POST['firstName']);
+            $user->setLastName($_POST['lastName']);
+            $user->setPostalCode($_POST['postalCode']);
+            $user->setEmail($_POST['email']);
+            $user->setTel($_POST['tel']);
+            $user->setPassword($_POST['password']);
+            $user->setPasswordConfirmation($_POST['password_confirmation']);
+            
+            if($user->register()) {
+                header('Location: login');
+            }
+        }
+    } else {
+        $error = "Velden zijn verplicht.";
+    }
 
 ?>
 
