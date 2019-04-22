@@ -10,10 +10,10 @@
 				if ( $user->validEmail($_POST['email']) === true ){
 					// valid email
 				} else {
-					$error = "Invalid email";
+					$error = "Ongeldige email";
 				}
 			} else {
-				$error = "Email already registered";
+				$error = "Email al in gebruik";
 			}
 		} catch( Throwable $t){
 			$error = $t->getMessage();
@@ -24,12 +24,12 @@
         if($user->login()) {
             $_SESSION['id'] = $user->getId();
         } else {
-            $error = "Password & email do not match";
+            $error = "Gegevens komen niet overeen";
         }
 	}
 
 	else {
-		$error = "Fields are required. Please fill them in.";
+		$error = "Velden zijn verplicht.";
 	}
 
 ?><!doctype html>

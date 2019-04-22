@@ -7,13 +7,13 @@
         if ( $user->validFirstName($_POST['firstName']) === true ){
             //valid first name
         } else {
-            $error = "Invalid name";
+            $error = "Ongeldige naam";
         }
 
         if ( $user->validLastName($_POST['lastName']) === true ){
             //valid last name
         } else {
-            $error = "Invalid name";
+            $error = "Ongeldige naam";
         }
 
         if ( $user->availableEmail($user->getEmail()) ) {
@@ -21,16 +21,16 @@
             if ( $user->validEmail($_POST['email']) === true ){
                 // valid email
             } else {
-                $error = "Invalid email";
+                $error = "Ongeldige email";
             }
         } else {
-            $error = "Email already registered";
+            $error = "Email al in gebruik";
         }
 
         if ($user->validatePassword($_POST['password'], $_POST['password_confirmation']) === true) {
             // passwords match
         } else {
-            $error = "passwords do not match";
+            $error = "Paswoorden zijn niet gelijk;
         }
 
         if ( !isset($error) ) {
