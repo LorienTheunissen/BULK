@@ -230,6 +230,7 @@
                         $statement->bindParam(":tel", $this->getTel());
                         $statement->bindParam(":password", $password);
                         $result = $statement->execute();
+                        header("Location: login.php");
                         return $result;
                 } catch (Throwable $t) {
                         echo $t;
@@ -242,7 +243,7 @@
                         $email = $_POST['email'];
                         $password = $_POST['password'];
 
-                        $statement = $conn->prepate("SELECT * FROM users WHERE email = :email");
+                        $statement = $conn->prepare("SELECT * FROM users WHERE email = :email");
                         $statement->bindParam(':email', $email);
                         $result = $statement->execute();
                         $user->$statement->fetch(PDO::FETCH_ASSOC);
@@ -250,9 +251,9 @@
                         if ( password_verify($password, $user['password']) ) {
                                 $this->setId($user['id']);
                                 $_SESSION['id'] = $this->id;
-                                header('Location: index');
+                                header('Location: index.html');
                         } else {
-                                $error = "Password and email do not match!";
+                                $error = "Email en wachtwoord komen niet overeen.";;
                         } 
                 } catch (Throwable $t) {
                         echo $t;

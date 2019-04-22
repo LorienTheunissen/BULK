@@ -4,18 +4,24 @@
 	if ( !empty($_POST) ) {
         $user = new User();
         
-		$user->setFirstName($_POST['firstName']);
-		$user->setLastName($_POST['lastName']);
-		$user->setPostalCode($_POST['postalCode']);
-		$user->setEmail($_POST['email']);
-		$user->setTel($_POST['tel']);
-		$user->setPassword($_POST['password']);
-		$user->setPasswordConfirmation($_POST['password_confirmation']);
-		
-		if($user->register()) {
-            $user->login();
-		}
-	}
+        if ( !isset($error) ) {
+            $user = new User();
+
+            $user->setFirstName($_POST['firstName']);
+            $user->setLastName($_POST['lastName']);
+            $user->setPostalCode($_POST['postalCode']);
+            $user->setEmail($_POST['email']);
+            $user->setTel($_POST['tel']);
+            $user->setPassword($_POST['password']);
+            $user->setPasswordConfirmation($_POST['password_confirmation']);
+
+            if($user->register()) {
+                $user->login();
+            }
+        }
+	} else {
+        $error = "Velden zijn verplicht!";
+    }
 
 ?>
 
@@ -72,7 +78,7 @@
 
                 <?php if ( isset($error) ): ?>
                     <p id="error">
-                        Hier komen de error berichten voor het registreren.
+                        <?php echo $error; ?>
                     </p>
                 <?php endif; ?>
             </div>
