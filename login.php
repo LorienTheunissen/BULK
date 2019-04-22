@@ -3,25 +3,29 @@
 	if (!empty ($_POST)) {
 		$user = new User;
 		try{
-			$user->login();
+            $user->login();
+
+            if ( $user->availableEmail($user->getEmail()) ) {
+				// Email ready to use
+				if ( $user->validEmail($_POST['email']) === true ){
+					// valid email
+				} else {
+					$error = "Invalid email";
+				}
+			} else {
+				$error = "Email already registered";
+			}
 		} catch( Throwable $t){
 			$error = $t->getMessage();
 		}
 		$user = new User();
 		$user->setId($_POST['id']);  
 		
-	if($user->login()) {
-		$_SESSION['id'] = $user->getId();
-	}
-
-	if($user->validEmail($_POST['email']) === true) {
-		//email is correct
-	}
-
-	else {
-		// email is not correct
-		$error = "Password & email do not match";
-	}
+        if($user->login()) {
+            $_SESSION['id'] = $user->getId();
+        } else {
+            $error = "Password & email do not match";
+        }
 	}
 
 	else {

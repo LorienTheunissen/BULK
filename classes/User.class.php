@@ -213,6 +213,22 @@
                 return $this;
         }        
 
+        public function availableEmail($email) {
+                $conn = Db::getInstance();
+                $statement = $conn->prepare("SELECT * FROM users WHERE email = :email LIMITS 1");
+                $statement->bindParam(":email", $email);
+                $statement->execute();
+                $result = $statement->fetch(PDO::FETCH_ASSOC);
+
+                if ($result == false) {
+                        // Email available
+                        return true;
+                } else {
+                        // Email not available
+                        return false;
+                }
+        }
+
         public function validEmail($email) {
                 $email = $_POST['email'];
                 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -260,8 +276,6 @@
                                 $this->setId($user['id']);
                                 $_SESSION['id'] = $this->id;
 			        header("Location: products.html");      
-		        } else {
-                                $error = "Password & email do not match";
 		        }
                 }
 
