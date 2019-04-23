@@ -40,15 +40,21 @@
 </header>
 <main>
     <h1>Mijn producten</h1>
-    <div class="filter">
-        <p>Sorteren op:</p>
-        <div class="filter-1">
-            <select>
-                <option value="datum_recent">Datum (recent)</option>
-                <option value="datum_oud">Datum (oud)</option>
-                <option value="naam">Naam</option>
-                <option value="categorie">Categorie</option>
-            </select>
+    <div class="row_header">
+        <div class="add_product">
+            <form action="addproduct.html">
+                <input class="button" type="submit" value="Product toevoegen">
+            </form>
+        </div>
+        <div class="filter">
+            <div class="filter"> Sorteren op   
+                <select>
+                    <option value="datum_recent">Datum (recent)</option>
+                    <option value="datum_oud">Datum (oud)</option>
+                    <option value="naam">Naam</option>
+                    <option value="categorie">Categorie</option>
+                </select>
+            </div>
         </div>
     </div>
     <table class="products">

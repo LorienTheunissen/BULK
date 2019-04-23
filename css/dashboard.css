@@ -277,11 +277,34 @@ table.orders .product_link {
     text-align: center;
 }
 
-/* FILTER */
+/* ROW HEADER */
 
-div.filter {
+div.row_header {
+    display: flex;
+    align-items: center;
     margin-bottom: 3%;
+    justify-content: space-between;
 }
+
+div.row_header input[type=submit], select {
+    width: 160px;
+}
+
+div.row_header input[type=submit] {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #306953;
+    height: 50px;
+}
+
+div.row_header input[type=submit]:hover {
+    background-color: #306953;
+    color: white;
+    border: none;
+}
+
+
+/* FILTER */
 
 div.filter div {
     padding: 1% 0;
@@ -289,7 +312,7 @@ div.filter div {
 }
 
 div.filter select {
-    height: 30px;
+    height: 50px;
     border: 1px solid #306953;
     border-radius: 6px;
     font-size: 0.9em;
