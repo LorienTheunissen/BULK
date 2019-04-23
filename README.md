@@ -30,7 +30,7 @@ Pagina | Functie | SB | RE
 `distributors.html` | Overzicht met alle initiatieven in de buurt | OK | 
 `distributor.html` | 1 specifieke verdeler| OK  | 
 `basket.html`| Winkelmandje|  | 
-`logout.html`| Uitloggen |  | 
+`logout.html`| Uitloggen | OK  | /
 `suppliers/dashboard.html`| Dashboard voor leverancier| OK | /
 `suppliers/addproduct.html`| Nieuw product toevoegen | OK | /
 `suppliers/products.html`| Overzicht van producten die leverancier verkoopt| OK  | /
