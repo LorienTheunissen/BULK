@@ -20,6 +20,11 @@ Pagina | Functie | SB | RE
 `register.html` | Registreren | OK | OK
 `login.html` | Inloggen | OK | OK
 `index.html` | Startpagina voor mensen die niet ingelogd zijn | OK | OK
+
+#### Platform voor gebruikers
+
+Pagina | Functie | SB | RE
+--- | --- | --- | ---
 `start.html` | Startpagina voor mensen die ingelogd zijn |  | 
 `products.html` | Overzicht met alle beschikbare producten | OK | OK
 `product.html`| 1 specifiek product | OK | OK
@@ -31,10 +36,17 @@ Pagina | Functie | SB | RE
 `distributor.html` | 1 specifieke verdeler| OK  | 
 `basket.html`| Winkelmandje|  | 
 `logout.html`| Uitloggen | OK  | /
+
+#### Dashboard voor leveranciers
+
+Pagina | Functie | SB | RE
+--- | --- | --- | ---
 `suppliers/dashboard.html`| Dashboard voor leverancier| OK | /
 `suppliers/addproduct.html`| Nieuw product toevoegen | OK | /
 `suppliers/products.html`| Overzicht van producten die leverancier verkoopt| OK  | /
 `suppliers/product.html`| 1 specifiek product die leverancier verkoopt | OK | /
+`suppliers/messages.html`| Overzicht van alle berichten |  | /
+`suppliers/message.html`| 1 specifiek bericht |  | /
 `suppliers/settings.html`| Overzicht van instellingen voor leverancier|  | /
 
 SB = startbestand; RE = responsive
