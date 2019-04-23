@@ -1,4 +1,38 @@
-<!doctype html>
+<?php
+require_once("bootstrap.php");
+if (!empty ($_POST)) {
+    $user = new User;
+    try{
+        $user->login();
+
+        if ( $user->availableEmail($user->getEmail()) ) {
+            // Email ready to use
+            if ( $user->validEmail($_POST['email']) === true ){
+                // valid email
+            } else {
+                $error = "Ongeldige email";
+            }
+        } else {
+            $error = "Email al in gebruik";
+        }
+    } catch( Throwable $t){
+        $error = $t->getMessage();
+    }
+    $user = new User();
+    $user->setId($_POST['id']);
+
+    if($user->login()) {
+        $_SESSION['id'] = $user->getId();
+    } else {
+        $error = "Gegevens komen niet overeen";
+    }
+}
+
+else {
+    $error = "Velden zijn verplicht.";
+}
+
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,11 +58,15 @@
         </div>
         <div class="form-login">
             <form action="products.html" method="POST">
-                <input placeholder="E-mailadres" type="email">
-                <input placeholder="Wachtwoord" type="password">
+                <input placeholder="E-mailadres" type="email" name="email">
+                <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Login" type="submit" value="Login">
             </form>
-            <p id="error">Hier komen de error berichten voor het inloggen.</p>
+            <?php if ( isset($error) ): ?>
+                <p id="error">
+                    <?php echo $error; ?>
+                </p>
+            <?php endif; ?>
         </div>
         <div>
             <p><a href="#">Wachtwoord vergeten?</a></p>
