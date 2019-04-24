@@ -78,7 +78,7 @@
                 </form>
             </div>
             <div class="product-order">
-                <form action="product.html" class="product-order" method="POST">
+                <form action="product.php" class="product-order" method="POST">
                     <div class="order-fields">
                         <input id="aantal" placeholder="Aantal" required type="text">
                         <select id="soort" required>
@@ -120,7 +120,7 @@
                                     src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -151,7 +151,7 @@
                                     src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -182,7 +182,7 @@
                                     src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>

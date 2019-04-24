@@ -106,7 +106,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -137,7 +137,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -168,7 +168,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -199,7 +199,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -230,7 +230,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
@@ -261,7 +261,7 @@ session_start();
                                     src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.html">
+                            <form action="product.php">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>
