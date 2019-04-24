@@ -18,7 +18,7 @@
     <nav>
         <a href="dashboard.php" class="active"><span><i class="fas fa-home"></i></span>Startpagina</a>
         <a href="addproduct.php"><i class="fas fa-plus"></i>Product toevoegen</a>
-        <a href="products.html"><i class="fas fa-dolly"></i>Mijn producten</a>
+        <a href="products.php"><i class="fas fa-dolly"></i>Mijn producten</a>
         <a href="#"><i class="fas fa-cash-register"></i>Item</a>
         <a href="#"><i class="fas fa-cog"></i>Instellingen</a>
         <a href="#"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
