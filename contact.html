@@ -17,7 +17,7 @@
     </div>
     <div class="subnav">
         <ul>
-            <li><a href="about.html">Over BULK</a></li>
+            <li><a href="about.php">Over BULK</a></li>
             <li><a href="contact.html">Contact</a></li>
             <div class="dropdown">
                 <li><a href="#">Welkom, <span>Joris</span></a></li>
