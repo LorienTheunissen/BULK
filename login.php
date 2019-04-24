@@ -23,6 +23,7 @@ if (!empty ($_POST)) {
 
     if($user->login()) {
         $_SESSION['id'] = $user->getId();
+        $_SESSION['firstName'] = $user->getFirstName();
     } else {
         $error = "Gegevens komen niet overeen";
     }
@@ -57,7 +58,7 @@ else {
             -->
         </div>
         <div class="form-login">
-            <form action="products.html" method="POST">
+            <form action="" method="POST">
                 <input placeholder="E-mailadres" type="email" name="email">
                 <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Login" type="submit" value="Login">
@@ -81,7 +82,7 @@ else {
                 <input class="button-outline" placeholder="Terug naar de startpagina" type="submit"
                        value="Terug naar Startpagina">
             </form>
-            <form action="register.html">
+            <form action="register.php">
                 <input class="button-line" placeholder="Registreren" type="submit" value="Registreren">
             </form>
         </div>
