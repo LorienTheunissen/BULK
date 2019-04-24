@@ -36,7 +36,7 @@
         <ul>
             <li><a href="#">Start</a></li>
             <li><a href="products.php">Producten</a></li>
-            <li><a href="suppliers.html">Leveranciers</a></li>
+            <li><a href="suppliers.php">Leveranciers</a></li>
             <li><a href="initiatives.php">Initiatieven</a></li>
         </ul>
     </div>
