@@ -278,10 +278,10 @@
             
             try {
                         $conn = Db::getInstance();
-                        $statement = $conn->prepare("INSERT INTO users(firstName, lastName, postalCode, email, tel, password) VALUES (:firstName, :lastName, :postalCode, :email, :tel, :password)");
-                        $statement->bindParam(":firstName", $this->getFirstName());
-                        $statement->bindParam(":lastName", $this->getLastName());
-                        $statement->bindParam(":postalCode", $this->getPostalCode());
+                        $statement = $conn->prepare("INSERT INTO users(first_name, last_name, postal_code, email, tel, password) VALUES (:first_name, :last_name, :postal_code, :email, :tel, :password)");
+                        $statement->bindParam(":first_name", $this->getFirstName());
+                        $statement->bindParam(":last_name", $this->getLastName());
+                        $statement->bindParam(":postal_code", $this->getPostalCode());
                         $statement->bindParam(":email", $this->getEmail());
                         $statement->bindParam(":tel", $this->getTel());
                         $statement->bindParam(":password", $password);
@@ -304,12 +304,9 @@
 		        $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 		        if( password_verify($password, $user['password']) ){
-                                session_start();
                                 $this->setId($user['id']);
                                 $_SESSION['id'] = $this->id;
-                                $this->setFirstName($user['firstName']);
-                                $_SESSION['firstName'] = $this->firstName;
-			        header("Location: products");      
+			        header("Location: products.php");
 		        }
                 }
 
@@ -317,5 +314,4 @@
                         echo $t;
                 }
         }
-
     }
