@@ -18,7 +18,7 @@
     </div>
     <nav>
         <a href="dashboard.html"><span><i class="fas fa-home"></i></span>Startpagina</a>
-        <a class="active" href="addproduct.html"><i class="fas fa-plus"></i>Product toevoegen</a>
+        <a class="active" href="addproduct.php"><i class="fas fa-plus"></i>Product toevoegen</a>
         <a href="products.html"><i class="fas fa-dolly"></i>Mijn producten</a>
         <a href="#"><i class="fas fa-cash-register"></i>Item</a>
         <a href="#"><i class="fas fa-cog"></i>Instellingen</a>
@@ -44,7 +44,7 @@
         <p id="error">Hier komen de error berichten voor het toevoegen van een nieuw product.</p>
     </div>
     <p>* Verplichte velden</p>
-    <form action="addproduct.html" method="POST" class="add_product">
+    <form action="addproduct.php" method="POST" class="add_product">
         <div class="row1">
             <div class="product_name">
                 <label for="name">Naam*</label>
