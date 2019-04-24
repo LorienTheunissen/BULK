@@ -23,6 +23,7 @@
 		
         if($user->login()) {
             $_SESSION['id'] = $user->getId();
+            $_SESSION['firstName'] = $user->getFirstName();
         } else {
             $error = "Gegevens komen niet overeen";
         }

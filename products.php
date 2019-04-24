@@ -1,3 +1,7 @@
+<?php
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +23,7 @@
             <li><a href="#">Wie zijn wij?</a></li>
             <li><a href="#">Contacteer ons</a></li>
             <div class="dropdown">
-                <li><a href="#">Welkom, <span>Joris</span></a></li>
+                <li><a href="#">Welkom, <span><?php echo $_SESSION['firstName'] ?></span></a></li>
                 <div class="dropdown-content">
                     <li><a href="#">Accountoverzicht</a></li>
                     <li><a href="#">Mijn bestellingen</a></li>
