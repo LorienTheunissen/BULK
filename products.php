@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +37,7 @@
     <div class="nav">
         <ul>
             <li><a href="#">Start</a></li>
-            <li><a href="products.html">Producten</a></li>
+            <li><a href="products.php">Producten</a></li>
             <li><a href="suppliers.html">Leveranciers</a></li>
             <li><a href="initiatives.html">Initiatieven</a></li>
         </ul>
