@@ -73,7 +73,7 @@
             <div class="product-supplier">
                 <img alt="logo" src="images/avatars/BULK_avatar_supplier_logo_1.jpeg">
                 <h3>Naam verkoper</h3>
-                <form action="supplier.html">
+                <form action="supplier.php">
                     <input id="contact-supplier" type="submit" value="Contacteer verkoper">
                 </form>
             </div>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="product-actions">
                         <div class="supplier">
-                            <a href="supplier.html"><img
+                            <a href="supplier.php"><img
                                     alt=""
                                     src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
@@ -146,7 +146,7 @@
                     </div>
                     <div class="product-actions">
                         <div class="supplier">
-                            <a href="supplier.html"><img
+                            <a href="supplier.php"><img
                                     alt=""
                                     src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="product-actions">
                         <div class="supplier">
-                            <a href="supplier.html"><img
+                            <a href="supplier.php"><img
                                     alt=""
                                     src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
                         </div>
