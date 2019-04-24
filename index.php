@@ -13,7 +13,7 @@
 <div class="intro">
     <nav>
         <div class="logo">
-            <a href="index.html"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
+            <a href="index.php"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
         </div>
         <div class="index-nav">
             <ul>

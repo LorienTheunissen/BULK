@@ -75,10 +75,10 @@ else {
     </main>
     <aside>
         <div class="logo">
-            <a href="index.html"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
+            <a href="index.php"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
-            <form action="index.html">
+            <form action="index.php">
                 <input class="button-outline" placeholder="Terug naar de startpagina" type="submit"
                        value="Terug naar Startpagina">
             </form>

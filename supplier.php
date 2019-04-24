@@ -168,7 +168,7 @@
                             <option value="five">5</option>
                         </select>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Schrijf hier je bericht."></textarea>
-                        <input type="submit" value="Verstuur"></input>
+                        <input type="submit" value="Verstuur">
                     </form>
                 </div>
                 <div class="tab_content" id="contact">
@@ -177,7 +177,7 @@
                     <form action="">
                         <input type="text" placeholder="Onderwerp">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Schrijf hier je bericht."></textarea>
-                        <input type="submit" value="Verstuur"></input>
+                        <input type="submit" value="Verstuur">
                     </form>
                 </div>
             </div>
