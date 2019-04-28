@@ -11,10 +11,9 @@ div.container {
     margin: 3%;
 }
 
-div.about-text  p{
+div.about-text p {
     line-height: 1.5;
 }
-
 
 
 @media (min-width: 650px) {

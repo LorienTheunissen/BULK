@@ -11,7 +11,7 @@ textarea:focus, input:focus, select:focus {
 }
 
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     background-color: #204637
 }
 
@@ -51,11 +51,11 @@ div.supplier .supplier-avatar img {
     margin: 3%;
 }
 
-div.supplier .supplier-name h2{
+div.supplier .supplier-name h2 {
     margin: 0;
 }
 
-div.supplier .supplier-name p{
+div.supplier .supplier-name p {
     margin-top: 1%;
 }
 
@@ -85,7 +85,7 @@ div.supplier .supplier-button input[type=submit] {
 }
 
 
-@media (min-width: 650px){
+@media (min-width: 650px) {
     div.container {
         margin: 3% 10%;
     }
@@ -101,14 +101,14 @@ div.supplier .supplier-button input[type=submit] {
     }
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
     div.suppliers {
-        grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     div.suppliers {
-        grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     }
 }

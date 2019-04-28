@@ -10,7 +10,7 @@ textarea:focus, input:focus, select:focus {
     outline: none;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     background-color: #204637
 }
 
@@ -45,11 +45,11 @@ div.supplier .supplier-avatar img {
     margin: 3%;
 }
 
-div.supplier .supplier-name h2{
+div.supplier .supplier-name h2 {
     margin: 0;
 }
 
-div.supplier .supplier-name p{
+div.supplier .supplier-name p {
     margin-top: 1%;
 }
 
@@ -204,7 +204,7 @@ textarea {
     }
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
     div.supplier-product {
         display: grid;
         grid-template-columns: 35% 35% 30%;
@@ -227,7 +227,7 @@ textarea {
     }
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
     div.supplier {
         margin: 3% auto 0 auto;
         display: grid;

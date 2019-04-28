@@ -1,24 +1,24 @@
 <?php
 require_once("bootstrap.php");
 
-if ( !empty($_POST) ) {
+if (!empty($_POST)) {
     $user = new User();
 
-    if ( $user->validFirstName($_POST['firstName']) === true ){
+    if ($user->validFirstName($_POST['firstName']) === true) {
         //valid first name
     } else {
         $error = "Ongeldige naam";
     }
 
-    if ( $user->validLastName($_POST['lastName']) === true ){
+    if ($user->validLastName($_POST['lastName']) === true) {
         //valid last name
     } else {
         $error = "Ongeldige naam";
     }
 
-    if ( $user->availableEmail($user->getEmail()) ) {
+    if ($user->availableEmail($user->getEmail())) {
         // Email ready to use
-        if ( $user->validEmail($_POST['email']) === true ){
+        if ($user->validEmail($_POST['email']) === true) {
             // valid email
         } else {
             $error = "Ongeldige email";
@@ -31,24 +31,24 @@ if ( !empty($_POST) ) {
         // passwords match
     } else {
         $error = "Paswoorden zijn niet gelijk";
-        }
-
-        if ( !isset($error) ) {
-            $user->setFirstName($_POST['firstName']);
-            $user->setLastName($_POST['lastName']);
-            $user->setPostalCode($_POST['postalCode']);
-            $user->setEmail($_POST['email']);
-            $user->setTel($_POST['tel']);
-            $user->setPassword($_POST['password']);
-            $user->setPasswordConfirmation($_POST['password_confirmation']);
-
-            if($user->register()) {
-                header('Location: login');
-            }
-        }
-    } else {
-        $error = "Velden zijn verplicht.";
     }
+
+    if (!isset($error)) {
+        $user->setFirstName($_POST['firstName']);
+        $user->setLastName($_POST['lastName']);
+        $user->setPostalCode($_POST['postalCode']);
+        $user->setEmail($_POST['email']);
+        $user->setTel($_POST['tel']);
+        $user->setPassword($_POST['password']);
+        $user->setPasswordConfirmation($_POST['password_confirmation']);
+
+        if ($user->register()) {
+            header('Location: login');
+        }
+    }
+} else {
+    $error = "Velden zijn verplicht.";
+}
 
 ?><!doctype html>
 <html lang="en">
@@ -99,7 +99,7 @@ if ( !empty($_POST) ) {
                 <input placeholder="Bevestig wachtwoord" type="password" name="passwordConfirmation">
                 <input placeholder="Registreer" type="submit" value="Registreer">
             </form>
-            <?php if ( isset($error) ): ?>
+            <?php if (isset($error)): ?>
                 <p id="error">
                     <?php echo $error; ?>
                 </p>

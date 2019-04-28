@@ -14,7 +14,9 @@
                     <li><a href="logout.php">Uitloggen</a></li>
                 </div>
             </div>
-            <li data-balloon="Winkelmandje" data-balloon-pos="down"><a href="#"><img alt="basket" class="icon" src="images/icons/BULK_icon_white_basket.png"></a></li>
+            <li data-balloon="Winkelmandje" data-balloon-pos="down"><a href="#"><img alt="basket" class="icon"
+                                                                                     src="images/icons/BULK_icon_white_basket.png"></a>
+            </li>
         </ul>
     </div>
     <div class="nav">
@@ -25,10 +27,12 @@
             <li><a href="initiatives.php">Initiatieven</a></li>
         </ul>
     </div>
+    <!--
     <div class="search">
         <form action="">
             <input type="text" placeholder="Wat zoek je?" class="search">
             <a href="#" class="search"><img alt="search" class="icon" src="images/icons/BULK_icon_white_search.png"></a>
         </form>
     </div>
+    -->
 </nav>

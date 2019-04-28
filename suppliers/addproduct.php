@@ -34,7 +34,7 @@
         <!--<a href="#" class="notification">Notificaties</a>-->
         <a href="#">
             <div class="avatar"><img alt="avatar" src="../images/avatars/BULK_avatar_user_1.jpg"><i
-                    class="fas fa-sort-down"></i></div>
+                        class="fas fa-sort-down"></i></div>
         </a>
     </div>
 </header>

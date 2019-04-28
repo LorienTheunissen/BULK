@@ -28,22 +28,6 @@
                     <option value="prijs">Prijs</option>
                 </select>
             </div>
-            <div class="filter-2">
-                <select>
-                    <option disabled selected>Filter 2</option>
-                    <option value="locatie">Locatie</option>
-                    <option value="datum">Datum</option>
-                    <option value="prijs">Prijs</option>
-                </select>
-            </div>
-            <div class="filter-3">
-                <select>
-                    <option disabled selected>Filter 3</option>
-                    <option value="locatie">Locatie</option>
-                    <option value="datum">Datum</option>
-                    <option value="prijs">Prijs</option>
-                </select>
-            </div>
         </div>
         <div class="suppliers">
             <div class="supplier">
@@ -57,11 +41,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -80,11 +64,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -103,11 +87,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -126,11 +110,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -149,11 +133,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -172,11 +156,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">
@@ -195,11 +179,11 @@
                 <div class="supplier-category">
                     <h3>Producten</h3>
                     <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                            alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                     <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                            alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                     <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                            alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                 </div>
                 <div class="supplier-button">
                     <form action="supplier.php">

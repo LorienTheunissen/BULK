@@ -83,8 +83,8 @@
                     <div class="product-actions">
                         <div class="supplier">
                             <a href="supplier.php"><img
-                                    alt=""
-                                    src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
+                                        alt=""
+                                        src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
                             <form action="product.php">
@@ -114,8 +114,8 @@
                     <div class="product-actions">
                         <div class="supplier">
                             <a href="supplier.php"><img
-                                    alt=""
-                                    src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
+                                        alt=""
+                                        src="images/avatars/BULK_avatar_supplier_logo_2.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
                             <form action="product.php">
@@ -145,8 +145,8 @@
                     <div class="product-actions">
                         <div class="supplier">
                             <a href="supplier.php"><img
-                                    alt=""
-                                    src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
+                                        alt=""
+                                        src="images/avatars/BULK_avatar_supplier_logo_3.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
                             <form action="product.php">

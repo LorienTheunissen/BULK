@@ -54,7 +54,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -67,8 +68,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">
@@ -90,7 +91,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -103,8 +105,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">
@@ -115,7 +117,8 @@
                     </div>
                 </div>
                 <div class="product ">
-                    <div class="product-img" style="background-image: url('images/products/BULK_products_yoghurt.jpeg')">
+                    <div class="product-img"
+                         style="background-image: url('images/products/BULK_products_yoghurt.jpeg')">
                     </div>
                     <div class="product-card">
                         <h2 class="product-name">Yoghurt</h2>
@@ -126,7 +129,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -139,8 +143,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">
@@ -162,7 +166,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -175,8 +180,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">
@@ -193,7 +198,8 @@
             <p>Aan deze initatieven kan u enkel deelnemen als u beschikt over een code.</p>
             <div class="products">
                 <div class="product ">
-                    <div class="product-img" style="background-image: url('images/products/BULK_products_yoghurt.jpeg')">
+                    <div class="product-img"
+                         style="background-image: url('images/products/BULK_products_yoghurt.jpeg')">
                     </div>
                     <div class="product-card">
                         <h2 class="product-name">Yoghurt</h2>
@@ -204,7 +210,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -217,8 +224,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">
@@ -240,7 +247,8 @@
                         </div>
                         <div class="product-icons">
                             <ul>
-                                <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
+                                <li><img alt="basket" class="icon"
+                                         src="images/icons/BULK_icon_green_location.png"><span>Locatie (aantal km)</span>
                                 </li>
                                 <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                 </li>
@@ -253,8 +261,8 @@
                         <div class="product-actions">
                             <div class="supplier distributor">
                                 <a href="distributor.php"><img
-                                        alt=""
-                                        src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
+                                            alt=""
+                                            src="images/avatars/BULK_avatar_distributor_1.jpg"><span>Verdeler</span></a>
                             </div>
                             <div class="button">
                                 <form action="initiative.php">

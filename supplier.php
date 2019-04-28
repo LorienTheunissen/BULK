@@ -30,11 +30,11 @@
                     <div class="supplier-category">
                         <h3>Producten</h3>
                         <a data-balloon="Fruit" data-balloon-pos="down" href="#"><img
-                                alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
+                                    alt="fruit" src="images/icons/BULK_icon_category_fruit.png"></a>
                         <a data-balloon="Groenten" data-balloon-pos="down" href="#"><img
-                                alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
+                                    alt="vegetables" src="images/icons/BULK_icon_category_groenten.png"></a>
                         <a data-balloon="Melk" data-balloon-pos="down" href="#"><img
-                                alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
+                                    alt="milk" src="images/icons/BULK_icon_category_melk.png"></a>
                     </div>
                 </div>
                 <div class="supplier-row-2">
@@ -70,7 +70,8 @@
                 <div class="tab_content" id="products">
                     <div class="supplier-products">
                         <div class="supplier-product">
-                            <div class="product-img" style="background-image: url('images/products/BULK_products_witloof.jpg')">
+                            <div class="product-img"
+                                 style="background-image: url('images/products/BULK_products_witloof.jpg')">
                             </div>
                             <div class="product-card">
                                 <h2 class="product-name">Witloof</h2>
@@ -80,7 +81,8 @@
                                     <ul>
                                         <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                         </li>
-                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
+                                        <li><img alt="basket" class="icon"
+                                                 src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
                                         </li>
                                         <li><img alt="basket" class="icon"
                                                  src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>
@@ -105,7 +107,8 @@
                                     <ul>
                                         <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_timer.png"><span>Resterende tijd</span>
                                         </li>
-                                        <li><img alt="basket" class="icon" src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
+                                        <li><img alt="basket" class="icon"
+                                                 src="images/icons/BULK_icon_green_minimum.png"><span>Minimum aankoop</span>
                                         </li>
                                         <li><img alt="basket" class="icon"
                                                  src="images/icons/BULK_icon_green_price.png"><span>Prijs</span></li>

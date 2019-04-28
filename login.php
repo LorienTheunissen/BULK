@@ -2,12 +2,12 @@
 require_once("bootstrap.php");
 if (!empty ($_POST)) {
     $user = new User;
-    try{
+    try {
         $user->login();
 
-        if ( $user->availableEmail($user->getEmail()) ) {
+        if ($user->availableEmail($user->getEmail())) {
             // Email ready to use
-            if ( $user->validEmail($_POST['email']) === true ){
+            if ($user->validEmail($_POST['email']) === true) {
                 // valid email
             } else {
                 $error = "Ongeldige email";
@@ -15,21 +15,19 @@ if (!empty ($_POST)) {
         } else {
             $error = "Email al in gebruik";
         }
-    } catch( Throwable $t){
+    } catch (Throwable $t) {
         $error = $t->getMessage();
     }
     $user = new User();
     $user->setId($_POST['id']);
 
-    if($user->login()) {
+    if ($user->login()) {
         $_SESSION['id'] = $user->getId();
         $_SESSION['firstName'] = $user->getFirstName();
     } else {
         $error = "Gegevens komen niet overeen";
     }
-}
-
-else {
+} else {
     $error = "Velden zijn verplicht.";
 }
 
@@ -63,7 +61,7 @@ else {
                 <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Login" type="submit" value="Login">
             </form>
-            <?php if ( isset($error) ): ?>
+            <?php if (isset($error)): ?>
                 <p id="error">
                     <?php echo $error; ?>
                 </p>

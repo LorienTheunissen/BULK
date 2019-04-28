@@ -239,28 +239,28 @@ table.orders th, td {
 }
 
 table.products td:first-child, table.products th:first-child,
-table.orders td:first-child, table.orders th:first-child{
+table.orders td:first-child, table.orders th:first-child {
     padding-left: 2%;
 }
 
 table.products tr:nth-child(even),
-table.orders tr:nth-child(even){
+table.orders tr:nth-child(even) {
     background-color: white;
 }
 
 table.products tr:hover,
-table.orders tr:hover{
+table.orders tr:hover {
     background-color: #ddd;
 }
 
 table.products tr.th,
-table.orders tr.th{
+table.orders tr.th {
     background-color: #306953;
     color: white;
 }
 
 .products .button,
-.orders .button{
+.orders .button {
     background-color: #306953;
     color: white;
     font-size: 0.9em;

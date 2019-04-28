@@ -30,7 +30,8 @@
     </nav>
     <div class="home">
         <h1>Groepsaankopen <br> in de buurt</h1>
-        <p class="lead">BULK is een online platform voor lokale verdelers en inwoners die het verkoopproces vergemakkelijkt</p>
+        <p class="lead">BULK is een online platform voor lokale verdelers en inwoners die het verkoopproces
+            vergemakkelijkt</p>
     </div>
 </div>
 <div class="how">
@@ -42,7 +43,8 @@
         <div class="list">
             <ol>
                 <li>Maak een gratis account aan en start je zoektocht naar lokale
-                    producten.</li>
+                    producten.
+                </li>
                 <li>Koop de gewenste hoeveelheid van een product naar keuze.</li>
                 <li>Betaal veilig op voorhand met ons ingebouwde betaalsysteem.</li>
                 <li>Haal je product af bij de leverancier waarbij je het aangekocht hebt.</li>

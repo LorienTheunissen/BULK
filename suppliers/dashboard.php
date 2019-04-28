@@ -8,13 +8,14 @@
     <title>BULK - Dashboard</title>
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 <aside>
     <div class="logo">
-    <a href="../index.php"><img src="../images/logo/BULK_logo_white_slogan.svg" alt="logo"></a>
-</div>
+        <a href="../index.php"><img src="../images/logo/BULK_logo_white_slogan.svg" alt="logo"></a>
+    </div>
     <nav>
         <a href="dashboard.php" class="active"><span><i class="fas fa-home"></i></span>Startpagina</a>
         <a href="addproduct.php"><i class="fas fa-plus"></i>Product toevoegen</a>
@@ -32,13 +33,16 @@
     <div class="user">
         <!--<a href="#" class="notification">Notificaties</a>-->
         <a href="#">
-            <div class="avatar"><img src="../images/avatars/BULK_avatar_user_1.jpg" alt="avatar"><i class="fas fa-sort-down"></i></div>
+            <div class="avatar"><img src="../images/avatars/BULK_avatar_user_1.jpg" alt="avatar"><i
+                        class="fas fa-sort-down"></i></div>
         </a>
     </div>
 </header>
 <main>
     <h1>Dit is een titel</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aut consectetur consequatur, corporis dolores fuga illo ipsum labore laboriosam laborum minus molestiae quasi repellendus repudiandae sunt tempora ut voluptatum? Eum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aut consectetur consequatur, corporis dolores fuga
+        illo ipsum labore laboriosam laborum minus molestiae quasi repellendus repudiandae sunt tempora ut voluptatum?
+        Eum?</p>
 </main>
 </body>
 </html>

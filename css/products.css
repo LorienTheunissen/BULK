@@ -215,7 +215,7 @@ div.button {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     div.products {
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     }
