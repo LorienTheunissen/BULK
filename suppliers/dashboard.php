@@ -17,7 +17,7 @@
         <a href="../index.php"><img src="../images/logo/BULK_logo_white_slogan.svg" alt="logo"></a>
     </div>
     <nav>
-        <a href="home.php" class="active"><span><i class="fas fa-home"></i></span>Startpagina</a>
+        <a href="dashboard.php" class="active"><span><i class="fas fa-home"></i></span>Startpagina</a>
         <a href="addproduct.php"><i class="fas fa-plus"></i>Product toevoegen</a>
         <a href="products.php"><i class="fas fa-dolly"></i>Mijn producten</a>
         <a href="#"><i class="fas fa-cash-register"></i>Item</a>
