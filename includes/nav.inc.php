@@ -4,14 +4,14 @@
     </div>
     <div class="subnav">
         <ul>
-            <li><a href="about.php">Over BULK</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about">Over BULK</a></li>
+            <li><a href="contact">Contact</a></li>
             <div class="dropdown">
-                <li><a href="#">Welkom, <span>Joris</span></a></li>
+                <li><a href="#">Welkom, <span><?php echo $_SESSION['firstName'] ?></span></a></li>
                 <div class="dropdown-content">
                     <li><a href="#">Accountoverzicht</a></li>
                     <li><a href="#">Mijn bestellingen</a></li>
-                    <li><a href="logout.php">Uitloggen</a></li>
+                    <li><a href="logout">Uitloggen</a></li>
                 </div>
             </div>
             <li data-balloon="Winkelmandje" data-balloon-pos="down"><a href="#"><img alt="basket" class="icon"
@@ -22,9 +22,9 @@
     <div class="nav">
         <ul>
             <li><a href="#">Start</a></li>
-            <li><a href="products.php">Producten</a></li>
-            <li><a href="suppliers.php">Leveranciers</a></li>
-            <li><a href="initiatives.php">Initiatieven</a></li>
+            <li><a href="products">Producten</a></li>
+            <li><a href="suppliers">Leveranciers</a></li>
+            <li><a href="initiatives">Initiatieven</a></li>
         </ul>
     </div>
     <!--

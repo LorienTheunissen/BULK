@@ -13,7 +13,7 @@
 <div class="intro">
     <nav>
         <div class="logo">
-            <a href="index.php"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
+            <a href="index"><img alt="logo" src="images/logo/BULK_logo_white_slogan.svg"></a>
         </div>
         <div class="index-nav">
             <ul>
@@ -21,7 +21,7 @@
                 <li><a href="#how">Hoe werkt het?</a></li>
                 <li><a href="#why">Waarom BULK?</a></li>
                 <li>
-                    <form action="login.php">
+                    <form action="login">
                         <input class="button-outline" placeholder="Inloggen" type="submit" value="Inloggen">
                     </form>
                 </li>
