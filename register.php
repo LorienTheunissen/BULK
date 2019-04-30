@@ -30,7 +30,7 @@
         if ($user->validatePassword($_POST['password'], $_POST['password_confirmation']) === true) {
             // passwords match
         } else {
-            $error = "Paswoorden zijn niet gelijk;
+            $error = "Paswoorden zijn niet gelijk";
         }
 
         if ( !isset($error) ) {
