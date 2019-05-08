@@ -1,24 +1,24 @@
 <?php
 require_once("bootstrap.php");
 
-if (!empty($_POST)) {
+if ( !empty($_POST) ) {
     $user = new User();
 
-    if ($user->validFirstName($_POST['firstName']) === true) {
+    if ( $user->validFirstName($_POST['firstName']) === true ){
         //valid first name
     } else {
         $error = "Ongeldige naam";
     }
 
-    if ($user->validLastName($_POST['lastName']) === true) {
+    if ( $user->validLastName($_POST['lastName']) === true ){
         //valid last name
     } else {
         $error = "Ongeldige naam";
     }
 
-    if ($user->availableEmail($user->getEmail())) {
+    if ( $user->availableEmail($user->getEmail()) ) {
         // Email ready to use
-        if ($user->validEmail($_POST['email']) === true) {
+        if ( $user->validEmail($_POST['email']) === true ){
             // valid email
         } else {
             $error = "Ongeldige email";
@@ -27,22 +27,22 @@ if (!empty($_POST)) {
         $error = "Email al in gebruik";
     }
 
-    if ($user->validatePassword($_POST['password'], $_POST['password_confirmation']) === true) {
+    if ($user->validatePassword($_POST['password'], $_POST['passwordConfirmation']) === true) {
         // passwords match
     } else {
         $error = "Paswoorden zijn niet gelijk";
     }
 
-    if (!isset($error)) {
+    if ( !isset($error) ) {
         $user->setFirstName($_POST['firstName']);
         $user->setLastName($_POST['lastName']);
         $user->setPostalCode($_POST['postalCode']);
         $user->setEmail($_POST['email']);
         $user->setTel($_POST['tel']);
         $user->setPassword($_POST['password']);
-        $user->setPasswordConfirmation($_POST['password_confirmation']);
+        $user->setPasswordConfirmation($_POST['passwordConfirmation']);
 
-        if ($user->register()) {
+        if($user->register()) {
             header('Location: login');
         }
     }
@@ -89,11 +89,11 @@ if (!empty($_POST)) {
             -->
         </div>
         <div class="form-register">
-            <form action="login.php" method="POST">
+            <form action="" method="POST">
                 <input placeholder="Voornaam" type="text" name="firstName">
                 <input placeholder="Naam" type="text" name="lastName">
                 <input placeholder="E-mailadres" type="email" name="email">
-                <input placeholder="Postcode" type="text" name="email" name="postalCode">
+                <input placeholder="Postcode" type="text" name="postalCode">
                 <input placeholder="Telefoonnummer (Optioneel)" type="text" name="tel">
                 <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Bevestig wachtwoord" type="password" name="passwordConfirmation">
