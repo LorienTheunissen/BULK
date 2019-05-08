@@ -195,7 +195,7 @@ input[type=submit] {
 textarea {
     height: 100px;
     resize: none;
-    padding-top: 3%;
+    padding-top: 1.5%;
 }
 
 @media (min-width: 650px) {
