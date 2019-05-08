@@ -250,6 +250,8 @@ class User
             if (password_verify($password, $user['password'])) {
                 $this->setId($user['id']);
                 $_SESSION['id'] = $this->id;
+                $this->setFirstName($user['firstName']);
+                $_SESSION['firstName'] = $this->firstName;
                 header("Location: products.php");
             }
         } catch (Throwable $t) {
