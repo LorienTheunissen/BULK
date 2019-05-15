@@ -27,7 +27,7 @@
             $error = "Email al in gebruik";
         }
 
-        if ($user->validatePassword($_POST['password'], $_POST['password_confirmation']) === true) {
+        if ($user->validatePassword($_POST['password'], $_POST['passwordConfirmation']) === true) {
             // passwords match
         } else {
             $error = "Paswoorden zijn niet gelijk";
@@ -40,7 +40,7 @@
             $user->setEmail($_POST['email']);
             $user->setTel($_POST['tel']);
             $user->setPassword($_POST['password']);
-            $user->setPasswordConfirmation($_POST['password_confirmation']);
+            $user->setPasswordConfirmation($_POST['passwordConfirmation']);
             
             if($user->register()) {
                 header('Location: login');

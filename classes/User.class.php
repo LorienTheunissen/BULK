@@ -258,7 +258,7 @@
 
         public function validatePassword($password, $passwordConfirmation) {
                 $password = $_POST['password'];
-                $passwordConfirmation = $_POST['password_confirmation'];
+                $passwordConfirmation = $_POST['passwordConfirmation'];
                 
                 if( !empty($password) || !empty($passwordConfirmation)  ){
                         if ($password == $passwordConfirmation) {
