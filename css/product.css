@@ -6,13 +6,15 @@ textarea:focus, input:focus, select:focus {
     outline: none;
 }
 
-form input[type=submit]:hover{
+form input[type=submit]:hover {
     background-color: #204637
 }
 
-div.container {
+.container {
     margin: 3%;
 }
+
+/* MAIN : breadcrumbs */
 
 .main .breadcrumbs a {
     color: #306953;
@@ -22,9 +24,13 @@ div.container {
     text-decoration-line: underline;
 }
 
+/* PRODUCT */
+
 .product .product-row1, .product-row2 {
     margin: 3% 0;
 }
+
+/* PRODUCT ROW 1 : img, info met title, progress bar en data */
 
 .product .product-img {
     background-repeat: no-repeat;
@@ -42,21 +48,19 @@ div.container {
     grid-row: 1 / span 1;
 }
 
-.product .product-description {
-    line-height: 1.5;
-}
-
-.product-data {
+.product .product-info .product-data {
     padding-left: 0;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.product-data li {
+.product .product-info .product-data li {
     list-style-type: none;
     padding-left: 0;
     line-height: 2.5;
 }
+
+/* PRODUCT ROW 2 : gegevens verkoper en bestelformulier */
 
 .product-supplier {
     display: grid;
@@ -66,6 +70,14 @@ div.container {
     grid-row: 2 / span 1;
     margin-bottom: 3%;
     grid-gap: 1%;
+}
+
+.product-supplier img {
+    height: 50px;
+}
+
+.product-supplier input {
+    width: 100%;
 }
 
 .product-order {
@@ -83,14 +95,6 @@ div.container {
     border-radius: 6px;
     font-size: 0.9em;
     width: 100%;
-}
-
-.product-supplier input {
-    width: 100%;
-}
-
-.product-supplier img {
-    height: 50px;
 }
 
 .product-order input, select, div.button input {
@@ -116,30 +120,33 @@ div.container {
     margin-top: 5%;
 }
 
-p#error {
+.product-order p#error {
     color: red;
 }
 
-div.others  {
+/* OTHERS : voorstellen van producten die hierop lijken (bv: zelfde categorie) */
+
+.others {
     margin: 3% 0;
 }
 
-div.others .products {
+.others .products {
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
 }
 
-div.others .product {
+.others .products .product {
     justify-items: center;
     background-color: white;
     border-radius: 6px;
     box-shadow: 0px 6px 9px #E4E4E4;
 }
 
-div.others .product-img {
+.others .product .product-img {
     background-repeat: no-repeat;
+
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -147,67 +154,66 @@ div.others .product-img {
     text-align: end;
 }
 
-div.others .product-card {
+.others .product .product-card {
     margin: 20px;
 }
 
-div.others .product-card span {
+.others .product .product-card span {
     padding-left: 10px;
 }
 
-div.others .product-icons ul {
+.others .product .product-icons ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-div.others .product-icons li {
+.others .product .product-icons li {
     line-height: 2;
 }
 
-div.others .product-icons li .icon {
+.others .product .product-icons li .icon {
     margin-right: 10px;
 }
 
-div.others .product-icons li span {
+.others .product .product-icons li span {
     padding-left: 5px;
 }
 
-div.others .product-actions {
+.others .product .product-actions {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-div.others .product-actions div.supplier {
+.others .product .product-actions .supplier {
     grid-column: 1 / span 1;
     text-align: left;
     display: grid;
 }
 
-div.others .product-actions div.supplier img {
+.others .product .product-actions .supplier img {
     height: 50px;
     border-radius: 25px;
 }
 
-div.others .product-actions div.supplier a {
+.others .product .product-actions .supplier a {
     color: #306953;
     font-family: "Avenir Medium";
 }
 
-div.others .product-actions div.button {
-    grid-column: 2 / span 1
-}
-
-div.others .button {
+.others .product .product-actions .button {
+    grid-column: 2 / span 1;
     text-align: right;
 }
 
-div.others .button input[type=submit] {
+.others .product .product-actions .button input[type=submit] {
     background-color: #306953;
     height: 50px;
     color: white;
 }
 
-@media(min-width: 400px){
+/* MEDIAQUERY VANAF 400PX */
+
+@media (min-width: 400px) {
     .product-supplier {
         grid-template-columns: 15% 35% auto;
     }
@@ -238,7 +244,7 @@ div.others .button input[type=submit] {
     }
 }
 
-@media(min-width: 1100px){
+@media (min-width: 1100px) {
     .product .product-row1, .product-row2 {
         margin: 3% 0;
         display: grid;
@@ -260,7 +266,7 @@ div.others .button input[type=submit] {
     }
 }
 
-@media(min-width: 1300px){
+@media (min-width: 1300px) {
     .product-supplier {
         grid-template-columns: 12.5% 50% auto;
     }

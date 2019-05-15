@@ -16,9 +16,10 @@ aside {
     background-color: #306953;
     max-width: 280px;
     width: 280px;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
+
 }
 
 .logo {
@@ -71,7 +72,7 @@ header {
     padding: 0.9% 20px;
     background-color: white;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 70% 30%;
 }
 
 header .search .fas {
@@ -79,18 +80,34 @@ header .search .fas {
 }
 
 .add_product input, .add_product select {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
-header .search input[type=text], .add_product input, .add_product select {
+header .search input[type=text],
+.add_product input,
+.add_product select,
+.add_product textarea {
     background-color: white;
     border: 1px solid #306953;
     height: 50px;
     text-decoration-line: none;
-    padding: 5px 12px;
     font-size: 0.9em;
     border-radius: 6px;
     margin-right: 1%;
+}
+
+header .search input[type=text],
+.add_product input,
+.add_product select {
+    padding: 5px 12px;
+}
+
+.add_product textarea {
+    height: 100px;
+    resize: none;
+    padding: 1% 12px 5px 12px;
+    width: 100%;
+    margin-bottom: 1%;
 }
 
 header .search input[type=text] {
@@ -105,11 +122,39 @@ header .search input[type=text] {
     line-height: 2;
 }
 
-.add_product {
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8 {
+    margin-bottom: 1%;
+}
+
+.add_product .row1, .add_product .row6, .add_product .row7 {
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-gap: 4%
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.add_product .row3, .row4, .row5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+}
+
+.add_product .row4 .min_check, .row5 .max_check {
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-gap: 2%;
+    padding-top: 4%;
+    align-items: center;
+}
+
+input[type=date], input[type=time] {
+    font-family: "Avenir Book";
+}
+
+p#error {
+    color: red;
+    margin-bottom: 3%;
 }
 
 header .search input[type=submit], .add_product .button {
@@ -126,12 +171,13 @@ header .search input[type=submit], .add_product .button {
 header .search input[type=submit] {
     width: 20%
 }
+
 .add_product .button {
-    width: 50%;
+    width: 100%;
     align-self: end;
     justify-self: end;
+    margin-top: 2%;
 }
-
 
 header .search input[type=submit]:hover {
     font-weight: 500;
@@ -162,13 +208,14 @@ header .user .avatar img {
 main {
     margin-left: 330px;
     margin-top: 55px;
+    margin-right: 55px;
 }
 
 main h1 {
     font-family: 'Avenir Heavy';
 }
 
-.minimum, .maximum {
+.minimum, .maximum, .deadline {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 4%;
@@ -176,14 +223,173 @@ main h1 {
 
 /* HIER STOPT CSS VOOR MENU */
 
-main .table ul {
-    display: grid;
-    grid-template-columns: repeat(7, 14%);
-    list-style-type: none;
-    padding: 0;
-    justify-items: start;
+/* HIER START CSS VOOR PRODUCTS.HTML */
+
+table.products,
+table.orders {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-main .table .title {
-    font-family: "Avenir Heavy";
+table.products th, td,
+table.orders th, td {
+    height: 50px;
+    text-align: left;
+    width: 160px;
+}
+
+table.products td:first-child, table.products th:first-child,
+table.orders td:first-child, table.orders th:first-child {
+    padding-left: 2%;
+}
+
+table.products tr:nth-child(even),
+table.orders tr:nth-child(even) {
+    background-color: white;
+}
+
+table.products tr:hover,
+table.orders tr:hover {
+    background-color: #ddd;
+}
+
+table.products tr.th,
+table.orders tr.th {
+    background-color: #306953;
+    color: white;
+}
+
+.products .button,
+.orders .button {
+    background-color: #306953;
+    color: white;
+    font-size: 0.9em;
+    padding: 3.5%;
+    text-decoration-line: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 0 solid transparent;
+}
+
+table.products .product_link,
+table.orders .product_link {
+    width: 20%;
+    text-align: center;
+}
+
+/* ROW HEADER */
+
+div.row_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+
+div.row_header input[type=submit], select {
+    width: 160px;
+}
+
+div.row_header input[type=submit] {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #306953;
+    height: 50px;
+}
+
+div.row_header input[type=submit]:hover {
+    background-color: #306953;
+    color: white;
+    border: none;
+}
+
+
+/* FILTER */
+
+div.filter div {
+    padding: 1% 0;
+    display: inline;
+}
+
+div.filter select {
+    height: 50px;
+    border: 1px solid #306953;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+/* PRINT BUTTON */
+
+input[type=submit].print {
+    background-color: transparent;
+    color: #306953;
+    border: 1px solid #306953;
+    height: 50px;
+    padding: 5px 12px;
+    font-size: 0.9em;
+    text-decoration-line: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+
+input[type=submit].print:hover {
+    background-color: #306953;
+    color: white;
+    border: none;
+}
+
+/* PRODUCT TABS */
+
+.intro ul {
+    padding-left: 0;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    width: 100%;
+}
+
+.intro li {
+    width: 25%
+}
+
+.intro li .icon {
+    width: 25px;
+    padding-right: 3%;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #ddd;
+    margin-bottom: 3%;
+}
+
+.tab button {
+    background-color: inherit;
+    display: inline-flex;
+    justify-content: flex-start;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1% 5%;
+    font-size: 0.9em;
+    text-decoration-line: none;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.tab button:hover {
+    background-color: #306953;
+    color: white;
+}
+
+.tab button.active {
+    background-color: #306953;
+    color: white;
+}
+
+.tab_content {
+    display: none;
 }

@@ -3,7 +3,7 @@ body {
     background-color: white;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Avenir Heavy';
 }
 
@@ -11,8 +11,24 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 2;
+}
+
+p.lead {
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
+}
+
+.title {
+    margin-bottom: 5%;
 }
 
 .intro {
@@ -37,12 +53,15 @@ a {
     text-align: center;
 }
 
-.intro nav div ul {
+.intro nav div ul, ol {
     list-style-type: none;
     padding: 0;
-    color: white;
     display: grid;
     justify-items: center;
+}
+
+.intro nav div ul {
+    color: white;
 }
 
 .intro nav div.logo img {
@@ -54,6 +73,7 @@ a {
     font-family: "Avenir Medium";
     letter-spacing: 1px;
     line-height: 3em;
+    font-size: 1em;
 }
 
 .intro input.button-outline {
@@ -81,30 +101,72 @@ a {
     color: #306953;
 }
 
-.intro .home, .right {
+.intro .home,
+.how .right,
+.why .left {
     padding: 10%;
 }
 
-.how .left {
-    background-image: url('../images/BULK_background_share.JPG');
+.how .left, .why .right {
     background-size: cover;
     background-position: center;
 }
 
 .how .left {
+    background-image: url('../images/homepage/BULK_background_share.JPG');
+}
+
+.how ol li {
+    margin: 3% 0;
+    line-height: 2;
+}
+
+.why .right {
+    background-image: url('../images/homepage/BULK_background_grocery bag.JPG');
+}
+
+.how .left, .why .right {
     height: 640px;
     width: 100%;
     padding-top: 10%;
 }
 
-.how .right {
+.how .right, .why .left {
     text-align: center;
 }
 
-.why {
+.users {
+    background-color: #f5f5f5;
+    padding: 6% 10%;
+    text-align: center;
+}
+
+.users article .user {
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.users article {
+    border-bottom: 1px solid #306953;
+}
+
+.users article .user_customer {
+    background-image: url(../images/homepage/BULK_users_customer.svg);
+}
+
+.users article .user_distributor {
+    background-image: url(../images/homepage/BULK_users_distributor.svg);
+}
+
+.users article .user_supplier {
+    background-image: url(../images/homepage/BULK_users_supplier.svg);
+}
+
+.footer {
     background-color: #306953;
-    color: white;
-    padding: 10%;
+    height: 200px;
 }
 
 @media (min-width: 600px) {
@@ -117,6 +179,7 @@ a {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
     }
+
 }
 
 @media (min-width: 800px) {
@@ -133,10 +196,17 @@ a {
         font-size: 1.2em;
     }
 
-    .why .articles {
+    .users .articles {
         display: grid;
-        grid-template-columns: 32% 32% 32%;
-        grid-gap: 4%;
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+        justify-items: center;
+        justify-content: center;
+    }
+
+
+    .users article {
+        border-bottom: none;
     }
 }
 
@@ -152,10 +222,15 @@ a {
     .intro p {
         font-size: 1.8em;
     }
+
+    .users .articles {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 4%;
+    }
 }
 
 @media (min-width: 1200px) {
-    .how {
+    .how, .why {
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -168,6 +243,10 @@ a {
 
     .intro nav .logo {
         display: grid;
+    }
+
+    .intro nav ul {
+        justify-items: end;
     }
 
     .intro nav li {

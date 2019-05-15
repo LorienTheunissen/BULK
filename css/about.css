@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+    font-family: 'Avenir Book';
+}
+
+h1, h2, h3, div.about-title {
+    font-family: "Avenir Heavy";
+}
+
+div.container {
+    margin: 3%;
+}
+
+div.about-text p {
+    line-height: 1.5;
+}
+
+
+@media (min-width: 650px) {
+    div.container {
+        margin: 3% 10%;
+    }
+}
