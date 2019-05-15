@@ -56,6 +56,7 @@
         <div class="title">
             <h1>Alle initiatieven</h1>
         </div>
+        <!--
         <div class="filter">
             <p>Filteren op:</p>
             <div class="filter-1">
@@ -75,6 +76,7 @@
                 </select>
             </div>
         </div>
+        -->
             <div class="products">
                 <div class="product ">
                     <div class="product-img" style="background-image: url('images/products/BULK_products_tofu.jpg')">
