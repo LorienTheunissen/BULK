@@ -52,7 +52,7 @@
 <div class="container">
     <div class="main">
         <div class="breadcrumbs">
-            <a href="products.php"><< Terug naar alle resultaten</a>
+            <a href="suppliers.php"><< Terug naar alle resultaten</a>
         </div>
         <div class="supplier">
             <div class="supplier-info">
