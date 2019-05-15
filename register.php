@@ -47,7 +47,7 @@ if ( !empty($_POST) ) {
         }
     }
 } else {
-    $error = "Velden zijn verplicht.";
+    //$error = "Velden zijn verplicht.";
 }
 
 ?><!doctype html>

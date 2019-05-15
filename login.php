@@ -28,7 +28,7 @@ if (!empty ($_POST)) {
         $error = "Gegevens komen niet overeen";
     }
 } else {
-    $error = "Velden zijn verplicht.";
+    //$error = "Velden zijn verplicht.";
 }
 
 ?><!doctype html>
