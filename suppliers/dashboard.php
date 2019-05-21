@@ -26,12 +26,7 @@
     </nav>
 </aside>
 <header>
-    <div class="search">
-        <input type="text" placeholder="Wat zoek je?">
-        <input type="submit" value="Zoeken">
-    </div>
     <div class="user">
-        <!--<a href="#" class="notification">Notificaties</a>-->
         <a href="#">
             <div class="avatar"><img src="../images/avatars/BULK_avatar_user_1.jpg" alt="avatar"><i
                         class="fas fa-sort-down"></i></div>
