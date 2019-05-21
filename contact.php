@@ -24,7 +24,7 @@
             <div class="dropdown">
                 <li><a href="#">Welkom, <span><?php echo $_SESSION['firstName'] ?></span></a></li>
                 <div class="dropdown-content">
-                    <li><a href="#">Accountoverzicht</a></li>
+                    <li><a href="profile.php">Accountoverzicht</a></li>
                     <li><a href="#">Mijn bestellingen</a></li>
                     <li><a href="logout">Uitloggen</a></li>
                 </div>

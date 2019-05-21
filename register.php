@@ -36,7 +36,7 @@
         if ( !isset($error) ) {
             $user->setFirstName($_POST['firstName']);
             $user->setLastName($_POST['lastName']);
-            $user->setPostalCode($_POST['postalCode']);
+            $user->setRegion($_POST['region']);
             $user->setEmail($_POST['email']);
             $user->setTel($_POST['tel']);
             $user->setPassword($_POST['password']);
@@ -96,7 +96,7 @@
                 <input placeholder="Voornaam" type="text" name="firstName">
                 <input placeholder="Naam" type="text" name="lastName">
                 <input placeholder="E-mailadres" type="email" name="email">
-                <input placeholder="Postcode" type="text" name="postalCode">
+                <input placeholder="Postcode" type="text" name="region">
                 <input placeholder="Telefoonnummer (Optioneel)" type="text" name="tel">
                 <input placeholder="Wachtwoord" type="password" name="password">
                 <input placeholder="Bevestig wachtwoord" type="password" name="passwordConfirmation">

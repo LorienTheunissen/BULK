@@ -5,9 +5,8 @@
         private $id;
         private $firstName;
         private $lastName;
-        private $postalCode;
+        private $region;
         private $email;
-        private $tel;
         private $password;
         private $passwordConfirmation;
         private $avatar;
@@ -74,21 +73,21 @@
         }
 
         /**
-         * Get the value of postalCode
+         * Get the value of region
          */ 
-        public function getPostalCode()
+        public function getRegion()
         {
-                return $this->postalCode;
+                return $this->region;
         }
 
         /**
-         * Set the value of postalCode
+         * Set the value of region
          *
          * @return  self
          */ 
-        public function setPostalCode($postalCode)
+        public function setRegion($region)
         {
-                $this->postalCode = $postalCode;
+                $this->region = $region;
 
                 return $this;
         }
@@ -109,26 +108,6 @@
         public function setEmail($email)
         {
                 $this->email = $email;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of tel
-         */ 
-        public function getTel()
-        {
-                return $this->tel;
-        }
-
-        /**
-         * Set the value of tel
-         *
-         * @return  self
-         */ 
-        public function setTel($tel)
-        {
-                $this->tel = $tel;
 
                 return $this;
         }
@@ -278,12 +257,11 @@
             
             try {
                         $conn = Db::getInstance();
-                        $statement = $conn->prepare("INSERT INTO users(firstName, lastName, postalCode, email, tel, password) VALUES (:firstName, :lastName, :postalCode, :email, :tel, :password)");
+                        $statement = $conn->prepare("INSERT INTO users(firstName, lastName, region, email, password) VALUES (:firstName, :lastName, :region, :email, :password)");
                         $statement->bindParam(":firstName", $this->getFirstName());
                         $statement->bindParam(":lastName", $this->getLastName());
-                        $statement->bindParam(":postalCode", $this->getPostalCode());
+                        $statement->bindParam(":region", $this->getRegion());
                         $statement->bindParam(":email", $this->getEmail());
-                        $statement->bindParam(":tel", $this->getTel());
                         $statement->bindParam(":password", $password);
                         $result = $statement->execute();
                         return $result;
@@ -314,7 +292,42 @@
                 }
 
                 catch (Throwable $t) {
-                        echo $t;
+                        $status = $t->getMessage;;
+                }
+        }
+
+        public function getUserById($id){
+                try {
+                        $this->id = $id;
+                        $conn = Db::getInstance();
+                        //placeholders
+                        $statement = $conn->prepare("SELECT * FROM users WHERE id=:id");
+                        $statement->bindParam(":id", $this->id);
+                        $statement->execute();
+                        $result = $statement->fetch(PDO::FETCH_ASSOC);
+                        $this->setFirstName($result["firstName"]);
+                        $this->setLastName($result["lastName"]);
+                        $this->setEmail($result["email"]);
+                        $this->setRegion($result['region']);
+                        $this->setPassword($result["password"]);
+                        return $this;       
+                } catch (Throwable $t) {
+                        $status = $t->getMessage();
+                }
+        }
+
+        public function updateProfile(){
+                try {
+                        $conn = Db::getInstance();
+                        $statement = $conn->prepare("UPDATE users SET firstName = :firstName, lastName = :lastName, email = :email, region = :region WHERE id = :id");
+                        $statement->bindParam(":firstName", $this->firstName);
+                        $statement->bindParam(":lastName", $this->lastName);
+                        $statement->bindParam(":email", $this->email);
+                        $statement->bindParam(":region", $this->region);
+                        $statement->bindParam(":id", $this->id);
+                        $result = $statement->execute();
+                } catch (Throwable $t) {
+                        $status = $t->getMessage();               
                 }
         }
 
