@@ -3,6 +3,21 @@
 require_once("../bootstrap.php");
 session_start();
 
+$supplier = new Supplier();
+$supplierId = $supplier->getId();
+
+$product = new Product();
+$product->getProductById($product->getId());
+
+if(!empty($_POST)){
+    $user->setFirstName($_POST['firstName']);
+    $user->setLastName($_POST['lastName']);
+    $user->setEmail($_POST['email']);
+    $user->setRegion($_POST['region']);
+    $user->updateProfile();
+    $status = "Profiel gewijzigd!";
+}
+
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +25,7 @@ session_start();
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>BULK - Product toevoegen</title>
+    <title>BULK - Product wijzigen</title>
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -23,7 +38,7 @@ session_start();
     </div>
     <nav>
         <a href="dashboard.php"><span><i class="fas fa-home"></i></span>Startpagina</a>
-        <a class="active" href="addproduct.php"><i class="fas fa-plus"></i>Product toevoegen</a>
+        <a class="active" href="addproduct.php"><i class="fas fa-plus"></i>Product wijzigen</a>
         <a href="products.php"><i class="fas fa-dolly"></i>Mijn producten</a>
         <a href="#"><i class="fas fa-cash-register"></i>Item</a>
         <a href="#"><i class="fas fa-cog"></i>Instellingen</a>
@@ -44,10 +59,10 @@ session_start();
     </div>
 </header>
 <main>
-    <h1>Product toevoegen</h1>
-    <div class="error">
-        <p id="error">Hier komen de error berichten voor het toevoegen van een nieuw product.</p>
-    </div>
+    <h1>Product wijzingen</h1>
+    <?php if(isset($status)): ?>
+        <div class="error"><?php echo $status; ?></div>
+    <?php endif; ?>
     <p>* Verplichte velden</p>
     <form action="addproduct.php" method="POST" class="add_product">
         <div class="row1">
@@ -192,7 +207,7 @@ session_start();
             <label for="pickup_description">Meer concrete informatie over het afhalen van dit product*</label>
             <textarea name="pickupInfo" id="pickup_description" cols="30" rows="10" required></textarea>
         </div>
-        <input class="button" type="submit" value="Voeg product toe">
+        <input class="button" type="submit" value="Opslaan">
     </form>
 </main>
 </body>

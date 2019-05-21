@@ -1,6 +1,7 @@
 <?php
 
 class Product {
+    private $id;
     private $nameProduct;
     private $category;
     private $description;
@@ -16,6 +17,27 @@ class Product {
     private $pickupInfo;
     private $supplier;
     private $city;
+
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
 
     /**
      * @return mixed
@@ -277,6 +299,10 @@ class Product {
         $statement->bindParam(":city", $this->getCity());
         $result = $statement->execute();
         return $result;
+    }
+
+    public function getProductById(){
+
     }
 }
 
