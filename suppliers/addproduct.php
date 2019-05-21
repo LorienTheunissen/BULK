@@ -1,11 +1,36 @@
-<!doctype html>
+<?php
+
+require_once("../bootstrap.php");
+
+$product = new Product();
+
+if(!empty($_POST)){
+    $product->setNameProduct($_POST['nameProduct']);
+    $product->setCategory($_POST['category']);
+    $product->setDescription($_POST['description']);
+    $product->setPrice($_POST['price']);
+    $product->setUnit($_POST['unit']);
+    $product->setPhoto("./images/products/aardbeien.jpg");
+    $product->setMinimum("min. " . $_POST['minAmount'] . $_POST['minUnit']);
+    $product->setMaximum("max. " . $_POST['maxAmount'] . $_POST['maxUnit']);
+    $product->setDeadlineDate($_POST['deadlineDate']);
+    $product->setDeadlineTime($_POST['deadlineTime']);
+    $product->setPickupDate($_POST['pickupDate']);
+    $product->setPickupAddress($_POST['pickupAddress']);
+    $product->setPickupInfo($_POST['pickupInfo']);
+    $product->setSupplier("Username");
+    $product->setCity("City");
+    $product->addProduct();
+}
+
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>BULK - Mijn producten</title>
+    <title>BULK - Product toevoegen</title>
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -49,12 +74,12 @@
             <div class="product_name">
                 <label for="name">Naam*</label>
                 <br>
-                <input id="name" type="text" required>
+                <input id="name" type="text" required name="nameProduct">
             </div>
             <div class="category">
                 <label for="category">Categorie*</label>
                 <br>
-                <select id="category" required>
+                <select id="category" required name="category">
                     <option disabled selected>Selecteer categorie</option>
                     <option value="aardappelen">Aardappelen</option>
                     <option value="brood">Brood & gebak</option>
@@ -74,18 +99,18 @@
         </div>
         <div class="row2">
             <label for="product_description">Productbeschrijving</label>
-            <textarea name="" id="product_description" cols="30" rows="10"></textarea>
+            <textarea name="description" id="product_description" cols="30" rows="10"></textarea>
         </div>
         <div class="row3">
             <div class="price">
                 <label for="price">Prijs per eenheid*</label>
                 <br>
-                <input id="price" type="number" required>
+                <input id="price" type="number" required name="price">
             </div>
             <div class="unit">
                 <label for="unit"></label>
                 <br>
-                <select id="unit" required>
+                <select id="unit" required name="unit">
                     <option disabled selected>Selecteer eenheid</option>
                     <optgroup label="Aantal">
                         <option value="stuks">stuk</option>
@@ -100,21 +125,17 @@
                     </optgroup>
                 </select>
             </div>
-            <div class="picture">
-                <label for="picture">Foto</label>
-                <input accept="image/png, image/jpeg" id="picture" name="picture" type="file">
-            </div>
         </div>
         <div class="row4">
             <div class="min_amount">
                 <label for="min_amount">Minimum aankoop per eenheid</label>
                 <br>
-                <input id="min_amount" type="text">
+                <input id="min_amount" type="text" name="minAmount">
             </div>
             <div class="min_unit">
                 <label for="min_unit"></label>
                 <br>
-                <select id="min_unit" required>
+                <select id="min_unit" required name="minUnit">
                     <option disabled selected>Selecteer eenheid</option>
                     <optgroup label="Aantal">
                         <option value="stuks">stuks</option>
@@ -138,12 +159,12 @@
             <div class="max_amount">
                 <label for="max_amount">Maximum beschikbaar</label>
                 <br>
-                <input id="max_amount" type="text">
+                <input id="max_amount" type="text" name="maxAmount">
             </div>
             <div class="max_unit">
                 <label for="max_unit"></label>
                 <br>
-                <select id="max_unit" required>
+                <select id="max_unit" required name="maxUnit">
                     <option disabled selected>Selecteer eenheid</option>
                     <optgroup label="Aantal">
                         <option value="stuks">stuks</option>
@@ -167,32 +188,29 @@
             <div class="deadline_date">
                 <label for="deadline_date">Deadline datum*</label>
                 <br>
-                <input id="deadline_date" type="date" required>
+                <input id="deadline_date" type="date" required name="deadlineDate">
             </div>
             <div class="deadline_time">
                 <label for="deadline_time">Deadline tijdstip*</label>
                 <br>
-                <input id="deadline_time" type="time" required>
+                <input id="deadline_time" type="time" required name="deadlineTime">
             </div>
         </div>
         <div class="row7">
             <div class="pickup_date">
                 <label for="pickup_date">Afhaling datum*</label>
                 <br>
-                <input id="pickup_date" type="date" required>
+                <input id="pickup_date" type="date" required name="pickupDate">
             </div>
             <div class="pickup_address">
                 <label for="pickup_address">Afhaling adres*</label>
                 <br>
-                <select id="pickup_address" required>
-                    <option disabled selected>Selecteer adres</option>
-                    <option value="address">Hier worden adressen uit database geïmporteerd.</option>
-                </select>
+                <input type="text" id="pickup_address" required name="pickupAddress">
             </div>
         </div>
         <div class="row8">
             <label for="pickup_description">Meer concrete informatie over het afhalen van dit product*</label>
-            <textarea name="" id="pickup_description" cols="30" rows="10" required></textarea>
+            <textarea name="pickupInfo" id="pickup_description" cols="30" rows="10" required></textarea>
         </div>
         <input class="button" type="submit" value="Voeg product toe">
     </form>
