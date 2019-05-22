@@ -7,17 +7,32 @@ $supplier = new Supplier();
 $supplierId = $supplier->getId();
 
 $product = new Product();
-$product->getProductById($product->getId());
+$productId = $product->getId();
+$product->getProductById($productId);
 
 if(!empty($_POST)){
-    $user->setFirstName($_POST['firstName']);
-    $user->setLastName($_POST['lastName']);
-    $user->setEmail($_POST['email']);
-    $user->setRegion($_POST['region']);
-    $user->updateProfile();
-    $status = "Profiel gewijzigd!";
-}
+    $product->setNameProduct($_POST["nameProduct"]);
+    $product->setCategory($_POST["category"]);
+    $product->setDescription($_POST["description"]);
+    $product->setPrice($_POST['price']);
+    $product->setUnit($_POST['unit']);
+    $product->setPhoto($_POST['photo']);
+    $product->setMinimum($_POST['minimum']);
+    $product->setMaximum($_POST['maximum']);
+    $product->setDeadlineDate($_POST['deadlineDate']);
+    $product->setDeadlineTime($_POST['deadlineTime']);
+    $product->setPickupDate($_POST['pickupDate']);
+    $product->setPickupInfo($_POST['pickupInfo']);
+    $product->setSupplier($_POST['supplier']);
+    $product->setCity($_POST['city']);
+    $product->setRegion($_POST['region']);
+    $product->setCategoryId($_POST['categoryId']);
+    $product->setSupplierId($_POST['supplierId']);
 
+    $product->updateProfile();
+    $status = "Product gewijzigd!";
+}
+    
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -69,7 +84,7 @@ if(!empty($_POST)){
             <div class="product_name">
                 <label for="name">Naam*</label>
                 <br>
-                <input id="name" type="text" required name="nameProduct">
+                <input id="name" type="text" required name="nameProduct"value = "<?php echo $product->getNameProduct(); ?>">
             </div>
             <div class="category">
                 <label for="category">Categorie*</label>
