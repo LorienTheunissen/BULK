@@ -240,7 +240,7 @@ class Order {
     public function addOrder() {
         try {
             $conn = Db::getInstance();
-            $statement = $conn->prepare("INSERT INTO orders(amount, productPhoto, productName, productId, price, unit, userId, supplierName, supplierId, status) VALUES (:amount, :productPhoto, :productName, :productId, :price, :unit, :userId, :supplierName, :supplierId, :status)");
+            $statement = $conn->prepare("INSERT INTO orders (amount, productPhoto, productName, productId, price, unit, userId, supplierName, supplierId) VALUES (:amount, :productPhoto, :productName, :productId, :price, :unit, :userId, :supplierName, :supplierId)");
             $statement->bindParam(":amount", $this->getAmount());
             $statement->bindParam(":productPhoto", $this->getProductPhoto());
             $statement->bindParam(":productName", $this->getProductName());
@@ -250,7 +250,6 @@ class Order {
             $statement->bindParam(":userId", $this->getUserId());
             $statement->bindParam(":supplierName", $this->getSupplierName());
             $statement->bindParam(":supplierId", $this->getSupplierId());
-            $statement->bindParam(":status", $this->getStatus());
             $result = $statement->execute();
             return $result;
         }

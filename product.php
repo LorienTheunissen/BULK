@@ -1,6 +1,26 @@
 <?php
     require_once('bootstrap.php');
     session_start();
+
+    $id = $_SESSION['id'];
+
+    $order = new Order();
+
+    if (!empty($_POST)) {
+        $order->setAmount($_POST['amount']);
+        $order->setUnit($_POST['unit']);
+        $order->setProductPhoto("./images/products/kersen.jpg");
+        $order->setProductName("Kersen");
+        $order->setProductId(8);
+        $order->setPrice("10 EUR");
+        $order->setUserId($_SESSION['id']);
+        $order->setSupplierName("De Fruitboer");
+        $order->setSupplierId(2);
+        $order->addOrder();
+
+        $status = "Order successvol geplaatst!";
+    }
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,16 +105,16 @@
                 </form>
             </div>
             <div class="product-order">
-                <form action="product.php" class="product-order" method="POST">
+                <form action="" class="product-order" method="POST">
                     <div class="order-fields">
-                        <input id="aantal" placeholder="Aantal" required type="text">
-                        <select id="soort" required>
+                        <input id="amount" name="amount" placeholder="aantal" required type="text">
+                        <select id="unit" name="unit" required>
                             <option disabled selected>Selecteer eenheid</option>
                             <option value="kilogram">Kilogram</option>
                             <option value="gram">Gram</option>
                         </select>
                     </div>
-                    <input id="order-button" type="submit" value="Bestel">
+                    <input id="button" type="submit" value="Bestel">
                 </form>
                 <?php if(isset($status)): ?>
                 <p class="error"><?php echo $status; ?></p>

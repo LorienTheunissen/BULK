@@ -24,6 +24,7 @@ if(!empty($_POST)){
     $product->setSupplier("Username");
     $product->setCity("City");
     $product->addProduct();
+    $status = "Product toegevoegd!";
 }
 
 ?><!doctype html>
