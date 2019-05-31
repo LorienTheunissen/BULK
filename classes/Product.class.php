@@ -17,9 +17,6 @@ class Product {
     private $pickupInfo;
     private $supplier;
     private $city;
-    private $region;
-    private $categoryId;
-    private $supplierId;
 
 
     /**
@@ -282,67 +279,6 @@ class Product {
         $this->city = $city;
     }
 
-    
-    /**
-     * Get the value of region
-     */ 
-    public function getRegion()
-    {
-        return $this->region;
-    }
-
-    /**
-     * Set the value of region
-     *
-     * @return  self
-     */ 
-    public function setRegion($region)
-    {
-        $this->region = $region;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of categoryId
-     */ 
-    public function getCategoryId()
-    {
-        return $this->categoryId;
-    }
-
-    /**
-     * Set the value of categoryId
-     *
-     * @return  self
-     */ 
-    public function setCategoryId($categoryId)
-    {
-        $this->categoryId = $categoryId;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of supplierId
-     */ 
-    public function getSupplierId()
-    {
-        return $this->supplierId;
-    }
-
-    /**
-     * Set the value of supplierId
-     *
-     * @return  self
-     */ 
-    public function setSupplierId($supplierId)
-    {
-        $this->supplierId = $supplierId;
-
-        return $this;
-    }
-
     public function addProduct(){
         $conn = Db::getInstance();
         $statement = $conn->prepare("INSERT INTO products(nameProduct, category, description, price, unit, photo, minimum, maximum, deadlineDate, deadlineTime, pickupDate, pickupAddress, pickupInfo, supplier, city) VALUES (:nameProduct, :category, :description, :price, :unit, :photo, :minimum, :maximum, :deadlineDate, :deadlineTime, :pickupDate, :pickupAddress, :pickupInfo, :supplier, :city)");
@@ -365,38 +301,9 @@ class Product {
         return $result;
     }
 
-    public function getProductById($id){
-        try {
-            $this->id =$id;
-            $conn = Db::getInstance();
-            $statement = $conn->prepare("SELECT * FROM products WHERE id = :id");
-            $statement->bindParam(":id", $this->id);
-            $statement->execute();
-            $result = $statement->fetch(PDO::FETCH_ASSOC);
-            $this->setNameProduct($result["nameProduct"]);
-            $this->setCategory($result["category"]);
-            $this->setDescription($result["description"]);
-            $this->setPrice($result['price']);
-            $this->setUnit($result['unit']);
-            $this->setPhoto($result['photo']);
-            $this->setMinimum($result['minimum']);
-            $this->setMaximum($result['maximum']);
-            $this->setDeadlineDate($result['deadlineDate']);
-            $this->setDeadlineTime($result['deadlineTime']);
-            $this->setPickupDate($result['pickupDate']);
-            $this->setPickupInfo($result['pickupInfo']);
-            $this->setSupplier($result['supplier']);
-            $this->setCity($result['city']);
-            $this->setRegion($result['region']);
-            $this->setCategoryId($result['categoryId']);
-            $this->setSupplierId($result['supplierId']);
+    public function getProductById(){
 
-            return $this;       
-        } catch (Throwable $t) {
-                $status = $t->getMessage();
-        }
     }
-
 }
 
 ?>
