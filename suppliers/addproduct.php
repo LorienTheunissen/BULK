@@ -1,6 +1,9 @@
 <?php
 
-require_once("../bootstrap.php");
+require_once('../bootstrap.php');
+session_start();
+
+$id = $_SESSION['id'];
 
 $product = new Product();
 
@@ -66,7 +69,9 @@ if(!empty($_POST)){
 <main>
     <h1>Product toevoegen</h1>
     <div class="error">
-        <p id="error">Hier komen de error berichten voor het toevoegen van een nieuw product.</p>
+    <?php if(isset($status)): ?>
+        <div class="error"><?php echo $status; ?></div>
+    <?php endif; ?>
     </div>
     <p>* Verplichte velden</p>
     <form action="addproduct.php" method="POST" class="add_product">
