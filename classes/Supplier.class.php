@@ -232,30 +232,4 @@
 
                 return $this;
         }
-
-        public function getSupplierById($id) {
-            try {
-                $this->id =$id;
-                $conn = Db::getInstance();
-                $statement = $conn->prepare("SELECT * FROM suppliers WHERE id = :id");
-                $statement->bindParam(":id", $this->id);
-                $statement->execute();
-                $result = $statement->fetch(PDO::FETCH_ASSOC);
-                $this->setCompanyName($result["companyName"]);
-                $this->setAddress($result["address"]);
-                $this->setNumber($result["number"]);
-                $this->setBus($result['bus']);
-                $this->setPostalCode($result['postalCode']);
-                $this->setLocation($result['location']);
-                $this->setRegion($result['region']);
-                $this->setFirstName($result['firstName']);
-                $this->setLastName($result['lastName']);
-                $this->setEmail($result['email']);
-                $this->setTel($result['tel']);
-
-                return $this;       
-            } catch (Throwable $t) {
-                    $status = $t->getMessage();
-            }
-        }
     }
