@@ -266,7 +266,7 @@
                         $result = $statement->execute();
                         return $result;
                 } catch (Throwable $t) {
-                        echo $t;
+                        $status = $t->getMessage();
                 }
         }
 
@@ -292,7 +292,7 @@
                 }
 
                 catch (Throwable $t) {
-                        $status = $t->getMessage;;
+                        $status = $t->getMessage();
                 }
         }
 

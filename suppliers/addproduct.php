@@ -68,11 +68,9 @@ if(!empty($_POST)){
 </header>
 <main>
     <h1>Product toevoegen</h1>
-    <div class="error">
     <?php if(isset($status)): ?>
         <div class="error"><?php echo $status; ?></div>
     <?php endif; ?>
-    </div>
     <p>* Verplichte velden</p>
     <form action="addproduct.php" method="POST" class="add_product">
         <div class="row1">

@@ -1,4 +1,5 @@
 <?php
+    require_once('bootstrap.php');
     session_start();
 ?><!DOCTYPE html>
 <html lang="en">
@@ -95,7 +96,9 @@
                     </div>
                     <input id="order-button" type="submit" value="Bestel">
                 </form>
-                <p id="error">Hier komen de error berichten voor het invullen van de bestelling.</p>
+                <?php if(isset($status)): ?>
+                <p class="error"><?php echo $status; ?></p>
+            <?php endif; ?>
             </div>
         </div>
     </div>
@@ -126,7 +129,7 @@
                                         src="images/avatars/BULK_avatar_supplier_logo_1.jpeg"><span>Verkoper</span></a>
                         </div>
                         <div class="button">
-                            <form action="product.php">
+                            <form action="" method="POST">
                                 <input type="submit" value="Bekijk product">
                             </form>
                         </div>

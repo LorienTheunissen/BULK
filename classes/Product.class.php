@@ -280,25 +280,29 @@ class Product {
     }
 
     public function addProduct(){
-        $conn = Db::getInstance();
-        $statement = $conn->prepare("INSERT INTO products(nameProduct, category, description, price, unit, photo, minimum, maximum, deadlineDate, deadlineTime, pickupDate, pickupAddress, pickupInfo, supplier, city) VALUES (:nameProduct, :category, :description, :price, :unit, :photo, :minimum, :maximum, :deadlineDate, :deadlineTime, :pickupDate, :pickupAddress, :pickupInfo, :supplier, :city)");
-        $statement->bindParam(":nameProduct", $this->getNameProduct());
-        $statement->bindParam(":category", $this->getCategory());
-        $statement->bindParam(":description", $this->getDescription());
-        $statement->bindParam(":price", $this->getPrice());
-        $statement->bindParam(":unit", $this->getUnit());
-        $statement->bindParam(":photo", $this->getPhoto());
-        $statement->bindParam(":minimum", $this->getMinimum());
-        $statement->bindParam(":maximum", $this->getMaximum());
-        $statement->bindParam(":deadlineDate", $this->getDeadlineDate());
-        $statement->bindParam(":deadlineTime", $this->getDeadlineTime());
-        $statement->bindParam(":pickupDate", $this->getPickupDate());
-        $statement->bindParam(":pickupAddress", $this->getPickupAddress());
-        $statement->bindParam(":pickupInfo", $this->getPickupInfo());
-        $statement->bindParam(":supplier", $this->getSupplier());
-        $statement->bindParam(":city", $this->getCity());
-        $result = $statement->execute();
-        return $result;
+        try {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("INSERT INTO products(nameProduct, category, description, price, unit, photo, minimum, maximum, deadlineDate, deadlineTime, pickupDate, pickupAddress, pickupInfo, supplier, city) VALUES (:nameProduct, :category, :description, :price, :unit, :photo, :minimum, :maximum, :deadlineDate, :deadlineTime, :pickupDate, :pickupAddress, :pickupInfo, :supplier, :city)");
+            $statement->bindParam(":nameProduct", $this->getNameProduct());
+            $statement->bindParam(":category", $this->getCategory());
+            $statement->bindParam(":description", $this->getDescription());
+            $statement->bindParam(":price", $this->getPrice());
+            $statement->bindParam(":unit", $this->getUnit());
+            $statement->bindParam(":photo", $this->getPhoto());
+            $statement->bindParam(":minimum", $this->getMinimum());
+            $statement->bindParam(":maximum", $this->getMaximum());
+            $statement->bindParam(":deadlineDate", $this->getDeadlineDate());
+            $statement->bindParam(":deadlineTime", $this->getDeadlineTime());
+            $statement->bindParam(":pickupDate", $this->getPickupDate());
+            $statement->bindParam(":pickupAddress", $this->getPickupAddress());
+            $statement->bindParam(":pickupInfo", $this->getPickupInfo());
+            $statement->bindParam(":supplier", $this->getSupplier());
+            $statement->bindParam(":city", $this->getCity());
+            $result = $statement->execute();
+            return $result;
+        } catch (throwable $t) {
+            $status = $t->getMessage();
+        }
     }
 
     public function getProductById(){
