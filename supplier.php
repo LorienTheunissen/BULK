@@ -1,5 +1,16 @@
 <?php
     session_start();
+
+    $id = $_SESSION['id'];
+    
+    if(!empty($_POST)){
+        $message = new Message();
+        $message->setMessage($_POST['message']);
+        $message->setUserId($id);
+        $message->setSupplierId(2);
+        $message->sendMessage();
+        $status = "Bericht goed verstuurd!";
+    }
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,12 +193,15 @@
                 </div>
                 <div class="tab_content" id="contact">
                     <h2>Contactformulier</h2>
-                    <p>Via deze tab kan men contact opnemen met de leverancier.</p>
-                    <form action="">
-                        <input type="text" placeholder="Onderwerp">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Schrijf hier je bericht."></textarea>
+                    <p>Via deze tab kan men contact opnemen met de leverancier.</p>                    
+                    <form action="" method="POST">
+                        <input type="text" placeholder="Onderwerp" name="subject">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Schrijf hier je bericht."></textarea>
                         <input type="submit" value="Verstuur">
                     </form>
+                    <?php if(isset($status)): ?>
+                        <p class="error"><?php echo $status; ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
             <!-- HIER EINDIGT DE TAB -->
