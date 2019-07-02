@@ -1,4 +1,4 @@
-/* NAVIGATIEBALK */
+/* NAVIGATIEBALK
 
 a {
     text-decoration: none;
@@ -158,5 +158,142 @@ nav div.search a.search {
 
     nav div.search .search .icon_search {
         display: inline;
+    }
+}
+
+ */
+
+body {
+    font-family: "Avenir";
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+a.link-green {
+    color: #306a53;
+}
+
+a.link-white {
+    color: white;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+input, select {
+    border: 1px solid #306953;
+    border-radius: 6px;
+    box-sizing:border-box;
+    display: block;
+    height: 50px;
+    padding: 0 0.5%;
+    width: 100%;
+    font-size: 0.8em;
+    font-family: "Avenir";
+}
+
+input[type="submit"].btn {
+    height: 50px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.header {
+    background-color: #306a53;
+}
+
+.header a {
+    color: white;
+}
+
+.header a:hover {
+    text-decoration-line: underline;
+}
+
+
+.header__logo img {
+    height: 50px;
+}
+
+/* HEADER */
+
+.header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 15% auto 15%
+}
+
+.header__logo img {
+    height: 50px;
+}
+
+.header__nav ul {
+    display: flex;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.header__nav li {
+    margin: 0 5%;
+}
+
+.header__subnav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__subnav li {
+    margin-left: 10%;
+}
+
+/* HEADER DROPDOWN */
+
+.header__subnav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header__subnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header__subnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+    padding: 16px 16px;
+    z-index: 1;
+}
+
+.header__subnav .dropdown-content a {
+    color: #306a53;
+}
+
+.header__subnav .dropdown li {
+    text-align: left;
+}
+
+@media (min-width: 650px) {
+    div.header {
+        padding: 0% 10%;
+    }
+
+    div.container {
+        margin: 0% 10%;
     }
 }
